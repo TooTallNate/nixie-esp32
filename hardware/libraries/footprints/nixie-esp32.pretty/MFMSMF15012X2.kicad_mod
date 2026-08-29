@@ -1,0 +1,238 @@
+(footprint "MFMSMF15012X2"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Bourns MF-MSMF150/12X-2 resettable PPTC fuse, 1812")
+	(tags "Resettable Fuse")
+	(property "Reference" "F**"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(uuid "90e3fa75-f0f5-4ec6-95ee-3aea5cc72b77")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Value" "MFMSMF15012X2"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "cff7c420-a701-41a4-a8a0-42adc5e544e9")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.bourns.com/docs/product-datasheets/mf-msmf.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2f96ff07-c56b-45f1-a30d-3576276d65b2")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "Bourns MF-MSMF150/12X-2 resettable PPTC fuse, 1.5 A hold, 12 V, 1812"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "675a8d48-ed5a-4f13-a752-def2f02098b4")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -3.8 0)
+		(end -3.8 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "2671433a-ebd1-49aa-b34b-b15e7469df92")
+	)
+	(fp_line
+		(start -3.8 0)
+		(end -3.8 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c9de034c-0569-43b2-8717-3224342c7c65")
+	)
+	(fp_line
+		(start -3.7 0)
+		(end -3.7 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "16739945-c559-469f-ad46-58a7c22f327f")
+	)
+	(fp_line
+		(start -1 -1.62)
+		(end 1 -1.62)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8122b94e-0957-49e7-b785-8ebc46b9a821")
+	)
+	(fp_line
+		(start -1 1.62)
+		(end 1 1.62)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1393552f-ff9c-408f-96a7-0d260b9e04f8")
+	)
+	(fp_arc
+		(start -3.8 0)
+		(mid -3.75 -0.05)
+		(end -3.7 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a35fd859-0639-4fe6-80ca-2f4fe606b302")
+	)
+	(fp_arc
+		(start -3.7 0)
+		(mid -3.75 0.05)
+		(end -3.8 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e661147c-792f-4f4c-b450-34c4eae34433")
+	)
+	(fp_arc
+		(start -3.7 0)
+		(mid -3.75 0.05)
+		(end -3.8 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ea5be179-03af-4a12-9b4d-e4d6fb63d451")
+	)
+	(fp_line
+		(start -4.23 -2.62)
+		(end 4.23 -2.62)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "67ff889f-4c74-4c04-80d5-8f1b7807e855")
+	)
+	(fp_line
+		(start -4.23 2.62)
+		(end -4.23 -2.62)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "8b500ff5-39b9-483d-84cb-f9c4a446de03")
+	)
+	(fp_line
+		(start -2.3 -1.62)
+		(end -2.3 1.62)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "5d27ee19-a89c-4e2f-bd46-01b1156ef15a")
+	)
+	(fp_line
+		(start -2.3 1.62)
+		(end 2.3 1.62)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "1692ca51-3fb9-474c-be27-fbfd1f77eae6")
+	)
+	(fp_line
+		(start 2.3 -1.62)
+		(end -2.3 -1.62)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "8513e29b-bc46-459d-a681-1dd3f6b165af")
+	)
+	(fp_line
+		(start 2.3 1.62)
+		(end 2.3 -1.62)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "98d0c3d7-fa4b-4a89-9ed3-b48c5dbae60f")
+	)
+	(fp_line
+		(start 4.23 -2.62)
+		(end 4.23 2.62)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "470ee7a6-4378-42f5-8e68-190be95fb0b1")
+	)
+	(fp_line
+		(start 4.23 2.62)
+		(end -4.23 2.62)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "4f5880a4-3748-4466-80a0-5a4c9b325240")
+	)
+	(pad "1" smd rect
+		(at -2.39 0)
+		(size 1.68 2.95)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 45)
+		(uuid "8505732c-cece-4dda-a09d-d43a12d3b805")
+	)
+	(pad "2" smd rect
+		(at 2.39 0)
+		(size 1.68 2.95)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 45)
+		(uuid "25386fd7-eb20-4f10-bdab-dc752b23df62")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/libraries/3dmodels/MF-MSMF150_12X-2.stp"
+		(offset (xyz 0 0 0))
+		(scale (xyz 1 1 1))
+		(rotate (xyz 90 0 90))
+	)
+)

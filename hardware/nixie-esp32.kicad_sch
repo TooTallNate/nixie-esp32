@@ -1349,6 +1349,199 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "nixie-esp32:MF-MSMF150_12X-2"
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "F"
+				(at 8.89 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MF-MSMF150_12X-2"
+				(at 8.89 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "nixie-esp32:MFMSMF15012X2"
+				(at 8.89 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.bourns.com/docs/product-datasheets/mf-msmf.pdf"
+				(at 8.89 -8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Bourns MF-MSMF150/12X-2 resettable PPTC fuse, 1.5 A hold / 3 A trip, 12 V, 1812"
+				(at 8.89 -11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "Bourns"
+				(at 8.89 -13.97 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer_Part_Number" "MF-MSMF150/12X-2"
+				(at 8.89 -16.51 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "PTC polyfuse resettable fuse PPTC 1.5A"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "MFMSMF15012X2"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MF-MSMF150_12X-2_1_1"
+				(rectangle
+					(start 5.08 1.27)
+					(end 12.7 -1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.588 -2.032) (xy 7.112 -2.032)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.668 2.032) (xy 7.112 -2.032)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.668 2.032) (xy 12.192 2.032)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 0 180)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "nixie-esp32:PTS645SL70SMTR92_LFS"
 			(pin_names
 				(hide yes)
@@ -2939,12 +3132,6 @@
 		(uuid "88f8c7a7-d43f-49ce-8dc6-50a0251fd14b")
 	)
 	(junction
-		(at 107.95 27.94)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8c276a58-2362-437d-a45f-951f48bf5556")
-	)
-	(junction
 		(at 99.06 27.94)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2967,6 +3154,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b767681c-3528-40d6-b704-a585f97392ac")
+	)
+	(junction
+		(at 90.17 27.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cdcbf719-e87d-4caf-a00b-b544caebc17f")
 	)
 	(junction
 		(at 118.11 102.87)
@@ -3240,16 +3433,6 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 27.94) (xy 107.95 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "222b0ef2-7bf4-4718-9c5a-83b9060d11a9")
-	)
-	(wire
-		(pts
 			(xy 207.01 135.89) (xy 207.01 142.24)
 		)
 		(stroke
@@ -3430,7 +3613,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 27.94) (xy 107.95 27.94)
+			(xy 99.06 27.94) (xy 128.27 27.94)
 		)
 		(stroke
 			(width 0)
@@ -3600,6 +3783,16 @@
 	)
 	(wire
 		(pts
+			(xy 87.63 27.94) (xy 90.17 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "671dd591-7c20-407a-ab1d-d494b96a1b89")
+	)
+	(wire
+		(pts
 			(xy 35.56 107.95) (xy 40.64 107.95)
 		)
 		(stroke
@@ -3727,6 +3920,16 @@
 			(type default)
 		)
 		(uuid "83891b84-47f6-4103-b3e8-f24f7548dbce")
+	)
+	(wire
+		(pts
+			(xy 64.77 27.94) (xy 69.85 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "838e3feb-689e-4749-9e7d-fa900e62c646")
 	)
 	(wire
 		(pts
@@ -3897,6 +4100,16 @@
 			(type default)
 		)
 		(uuid "a41eb17b-db70-483a-9ade-baad17df6b15")
+	)
+	(wire
+		(pts
+			(xy 64.77 24.13) (xy 64.77 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a87643ca-593b-4180-9b4c-e9b07054bf63")
 	)
 	(wire
 		(pts
@@ -5536,8 +5749,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "3f6f1498-dc4d-43eb-9b6b-0c9cc2c1f189")
-		(property "Reference" "#FLG01"
+		(uuid "7c1f5a90-4b2e-4f6d-9a83-2e5d0c7b1a42")
+		(property "Reference" "#FLG04"
 			(at 99.06 26.035 0)
 			(hide yes)
 			(show_name no)
@@ -5582,6 +5795,84 @@
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
 			(at 99.06 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9e8d7c6b-5a49-4382-b1f0-3d2c1b0a9e8f")
+		)
+		(instances
+			(project "nixie-esp32"
+				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc"
+					(reference "#FLG04")
+					(unit 1)
+				)
+			)
+		)
+	)
+(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 64.77 27.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3f6f1498-dc4d-43eb-9b6b-0c9cc2c1f189")
+		(property "Reference" "#FLG01"
+			(at 64.77 26.035 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 64.77 22.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 64.77 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 64.77 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 64.77 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6187,6 +6478,108 @@
 			(project "nixie-esp32"
 				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc"
 					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "nixie-esp32:MF-MSMF150_12X-2")
+		(at 69.85 27.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "69c5de8c-29b5-40f4-b7f5-f1f7472cb63f")
+		(property "Reference" "F1"
+			(at 78.74 20.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MF-MSMF150_12X-2"
+			(at 78.74 22.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "nixie-esp32:MFMSMF15012X2"
+			(at 78.74 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.bourns.com/docs/product-datasheets/mf-msmf.pdf"
+			(at 78.74 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Bourns MF-MSMF150/12X-2 resettable PPTC fuse, 1.5 A hold / 3 A trip, 12 V, 1812"
+			(at 78.74 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Bourns"
+			(at 78.74 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MF-MSMF150/12X-2"
+			(at 78.74 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c2cecd3a-7bab-4d77-8b4a-00c42cf7a2b2")
+		)
+		(pin "2"
+			(uuid "7a9cf08e-93e1-4084-a7e3-8adb698ea25b")
+		)
+		(instances
+			(project "nixie-esp32"
+				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc"
+					(reference "F1")
 					(unit 1)
 				)
 			)
@@ -7899,7 +8292,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 107.95 27.94 0)
+		(at 64.77 24.13 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7910,7 +8303,7 @@
 		(fields_autoplaced yes)
 		(uuid "d7aae60e-01cc-4e5a-b59a-df8224d6fd50")
 		(property "Reference" "#PWR09"
-			(at 107.95 31.75 0)
+			(at 64.77 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7921,7 +8314,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 107.95 22.86 0)
+			(at 64.77 19.05 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7931,7 +8324,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 107.95 27.94 0)
+			(at 64.77 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7942,7 +8335,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 107.95 27.94 0)
+			(at 64.77 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7953,7 +8346,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 107.95 27.94 0)
+			(at 64.77 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

@@ -3502,6 +3502,122 @@
 		)
 		(embedded_fonts no)
 	)
+	(symbol "MF-MSMF150_12X-2"
+		(pin_names
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "F"
+			(at 8.89 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Value" "MF-MSMF150_12X-2"
+			(at 8.89 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" "nixie-esp32:MFMSMF15012X2"
+			(at 8.89 -6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Datasheet" "https://www.bourns.com/docs/product-datasheets/mf-msmf.pdf"
+			(at 8.89 -8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Description" "Bourns MF-MSMF150/12X-2 resettable PPTC fuse, 1.5 A hold / 3 A trip, 12 V, 1812"
+			(at 8.89 -11.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Manufacturer" "Bourns"
+			(at 8.89 -13.97 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Manufacturer_Part_Number" "MF-MSMF150/12X-2"
+			(at 8.89 -16.51 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "ki_keywords" "PTC polyfuse resettable fuse PPTC 1.5A"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "ki_fp_filters" "MFMSMF15012X2"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects (font (size 1.27 1.27)))
+		)
+		(symbol "MF-MSMF150_12X-2_1_1"
+			(rectangle
+				(start 5.08 1.27)
+				(end 12.7 -1.27)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill (type background))
+			)
+			(polyline
+				(pts
+					(xy 5.588 -2.032) (xy 7.112 -2.032)
+				)
+				(stroke (width 0.254) (type default))
+				(fill (type none))
+			)
+			(polyline
+				(pts
+					(xy 10.668 2.032) (xy 7.112 -2.032)
+				)
+				(stroke (width 0.254) (type default))
+				(fill (type none))
+			)
+			(polyline
+				(pts
+					(xy 10.668 2.032) (xy 12.192 2.032)
+				)
+				(stroke (width 0.254) (type default))
+				(fill (type none))
+			)
+			(pin passive line
+				(at 0 0 0)
+				(length 5.08)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at 17.78 0 180)
+				(length 5.08)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+		(embedded_fonts no)
+	)
 	(symbol "SMTLA5050RGB"
 		(pin_names
 			(offset 1.016)
