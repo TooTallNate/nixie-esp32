@@ -2,4 +2,5 @@
 	(version 7)
 	(lib (name "nixie-esp32") (type "KiCad") (uri "${KIPRJMOD}/libraries/footprints/nixie-esp32.pretty") (options "") (descr "Project-specific footprints"))
 	(lib (name "nixies-us") (type "KiCad") (uri "${KIPRJMOD}/libraries/footprints/nixies-us.pretty") (options "") (descr "Nixie tube footprints converted from the nixies-us legacy library"))
+	(lib (name "nch8200hv") (type "KiCad") (uri "${KIPRJMOD}/libraries/footprints/nch8200hv.pretty") (options "") (descr "NCH8200HV high-voltage power module"))
 )
