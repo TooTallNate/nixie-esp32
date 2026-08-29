@@ -300,170 +300,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Switch:SW_Push"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "SW"
-				(at 1.27 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "SW_Push"
-				(at 0 -1.524 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Push button switch, generic, two pins"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "switch normally-open pushbutton push-button"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "SW_Push_0_1"
-				(circle
-					(center -2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.27) (xy 0 3.048)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 1.27) (xy -2.54 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "nixie-esp32:AP7361C-33E-13"
 			(pin_names
 				(offset 0.254)
@@ -1508,6 +1344,270 @@
 					)
 					(fill
 						(type background)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "nixie-esp32:PTS645SL70SMTR92_LFS"
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "S"
+				(at 7.62 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PTS645SL70SMTR92_LFS"
+				(at 7.62 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "nixie-esp32:PTS645SL70SMTR92LFS"
+				(at 7.62 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.ckswitches.com/media/1471/pts645.pdf"
+				(at 7.62 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "C&K PTS645SL70SMTR92 LFS tactile switch, SPST-NO, top actuated, surface mount, 50 mA at 12 VDC"
+				(at 7.62 -15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "C&K"
+				(at 7.62 -17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer_Part_Number" "PTS645SL70SMTR92 LFS"
+				(at 7.62 -20.32 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "tactile switch push button SPST normally open"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "PTS645SL70SMTR92LFS"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PTS645SL70SMTR92_LFS_1_1"
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 5.08 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -5.08) (xy 2.54 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 5.588 -2.54)
+					(radius 0.508)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.096 -2.286) (xy 8.382 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 9.652 -2.54)
+					(radius 0.508)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -2.54) (xy 12.7 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 12.7 -5.08) (xy 12.7 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 15.24 0 180)
+					(length 2.54)
+					(name "NO_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 -5.08 180)
+					(length 2.54)
+					(name "NO_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 2.54)
+					(name "COM_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 0)
+					(length 2.54)
+					(name "COM_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
 				)
 			)
@@ -2779,6 +2879,30 @@
 		(uuid "27a0bde8-f702-4767-b815-ed19413442ac")
 	)
 	(junction
+		(at 276.86 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "29252c1a-b6ec-4a88-94ac-c7c990ad2f60")
+	)
+	(junction
+		(at 269.24 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2cb6c479-d9e4-4107-a6e1-acbcf9fc1886")
+	)
+	(junction
+		(at 168.91 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4c0c6aa8-76f4-4631-97df-a3c9cd964f9a")
+	)
+	(junction
+		(at 276.86 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "73880bef-f024-4755-9f5d-4c8db0fc7b99")
+	)
+	(junction
 		(at 90.17 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2803,6 +2927,12 @@
 		(uuid "8fbffadb-9370-4b05-86f8-44fa5b38d707")
 	)
 	(junction
+		(at 158.75 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a012b28d-cc4d-438e-a43b-719151b89055")
+	)
+	(junction
 		(at 107.95 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2815,16 +2945,10 @@
 		(uuid "b767681c-3528-40d6-b704-a585f97392ac")
 	)
 	(junction
-		(at 267.97 74.93)
+		(at 168.91 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "bb8d4dc1-f29d-44f5-86aa-9e95b58c1e05")
-	)
-	(junction
-		(at 158.75 52.07)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "db8ac4c7-442c-4dd4-9b4f-ff1f6a6618b4")
+		(uuid "bf4d8c55-b214-4815-8c2d-da6891224a47")
 	)
 	(no_connect
 		(at 252.73 125.73)
@@ -2956,17 +3080,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 49.53) (xy 167.64 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0000a2a3-f021-4424-87f7-7d001530123f")
-	)
-	(wire
-		(pts
-			(xy 267.97 87.63) (xy 275.59 87.63)
+			(xy 269.24 93.98) (xy 276.86 93.98)
 		)
 		(stroke
 			(width 0)
@@ -2983,6 +3097,16 @@
 			(type default)
 		)
 		(uuid "03989fe5-2452-4196-8af3-eccd3e881527")
+	)
+	(wire
+		(pts
+			(xy 269.24 74.93) (xy 276.86 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "051a35c6-5b6a-45a7-a605-63d77681946e")
 	)
 	(wire
 		(pts
@@ -3076,6 +3200,16 @@
 	)
 	(wire
 		(pts
+			(xy 168.91 52.07) (xy 171.45 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "258b2f09-755d-4c12-88e6-7d595fdf97ca")
+	)
+	(wire
+		(pts
 			(xy 267.97 105.41) (xy 267.97 111.76)
 		)
 		(stroke
@@ -3106,6 +3240,16 @@
 	)
 	(wire
 		(pts
+			(xy 276.86 74.93) (xy 276.86 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2840e945-6aae-48fc-90c1-38ac459eefbf")
+	)
+	(wire
+		(pts
 			(xy 130.81 62.23) (xy 130.81 77.47)
 		)
 		(stroke
@@ -3113,6 +3257,16 @@
 			(type default)
 		)
 		(uuid "2c3ffc64-f1be-4105-b226-86794ec414ab")
+	)
+	(wire
+		(pts
+			(xy 276.86 92.71) (xy 281.94 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ce8d1a4-c13f-43d7-8b16-f9869e85eaee")
 	)
 	(wire
 		(pts
@@ -3153,16 +3307,6 @@
 			(type default)
 		)
 		(uuid "3375d341-36b4-404e-b04c-18b15b60fe2f")
-	)
-	(wire
-		(pts
-			(xy 276.86 85.09) (xy 276.86 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "344151c4-adc7-4f86-944f-9568f2742e4c")
 	)
 	(wire
 		(pts
@@ -3226,6 +3370,16 @@
 	)
 	(wire
 		(pts
+			(xy 168.91 52.07) (xy 166.37 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48cbc4ef-e458-467c-aefb-e7737e24a920")
+	)
+	(wire
+		(pts
 			(xy 153.67 39.37) (xy 153.67 41.91)
 		)
 		(stroke
@@ -3273,16 +3427,6 @@
 			(type default)
 		)
 		(uuid "52cbebd8-69aa-4754-9799-65ffa5f9d1d5")
-	)
-	(wire
-		(pts
-			(xy 276.86 86.36) (xy 280.67 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "52d97c77-14c0-45df-b454-f199945145b9")
 	)
 	(wire
 		(pts
@@ -3386,7 +3530,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 52.07) (xy 158.75 39.37)
+			(xy 158.75 52.07) (xy 158.75 35.56)
 		)
 		(stroke
 			(width 0)
@@ -3413,6 +3557,16 @@
 			(type default)
 		)
 		(uuid "77a0673f-b5af-4d3b-82d8-8048bebee124")
+	)
+	(wire
+		(pts
+			(xy 168.91 35.56) (xy 168.91 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79171a4c-5f0f-44ba-b82b-ba061a63f9d8")
 	)
 	(wire
 		(pts
@@ -3456,7 +3610,7 @@
 	)
 	(wire
 		(pts
-			(xy 267.97 74.93) (xy 267.97 87.63)
+			(xy 269.24 74.93) (xy 269.24 93.98)
 		)
 		(stroke
 			(width 0)
@@ -3486,6 +3640,16 @@
 	)
 	(wire
 		(pts
+			(xy 168.91 52.07) (xy 168.91 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8efb0b5b-bcec-4764-9c86-aa2cd225333d")
+	)
+	(wire
+		(pts
 			(xy 261.62 97.79) (xy 261.62 105.41)
 		)
 		(stroke
@@ -3506,13 +3670,23 @@
 	)
 	(wire
 		(pts
-			(xy 275.59 97.79) (xy 275.59 100.33)
+			(xy 276.86 104.14) (xy 276.86 106.68)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "97646a3b-62ca-4aff-9aec-aef3d526a520")
+	)
+	(wire
+		(pts
+			(xy 274.32 91.44) (xy 276.86 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "995953da-c377-4e57-bef1-b961557d5505")
 	)
 	(wire
 		(pts
@@ -3533,6 +3707,16 @@
 			(type default)
 		)
 		(uuid "9e0309d3-3773-4af4-afa4-8461d81e7b68")
+	)
+	(wire
+		(pts
+			(xy 276.86 92.71) (xy 276.86 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f30259b-94af-43d2-b134-a66744f96694")
 	)
 	(wire
 		(pts
@@ -3566,17 +3750,7 @@
 	)
 	(wire
 		(pts
-			(xy 267.97 74.93) (xy 276.86 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a86c6e5c-0e8e-430c-a295-49363c2eca59")
-	)
-	(wire
-		(pts
-			(xy 167.64 50.8) (xy 171.45 50.8)
+			(xy 168.91 54.61) (xy 172.72 54.61)
 		)
 		(stroke
 			(width 0)
@@ -3606,6 +3780,16 @@
 	)
 	(wire
 		(pts
+			(xy 274.32 76.2) (xy 276.86 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b58a72ca-53a4-4e84-89b9-cc1eb2932fe5")
+	)
+	(wire
+		(pts
 			(xy 52.07 143.51) (xy 52.07 147.32)
 		)
 		(stroke
@@ -3623,6 +3807,16 @@
 			(type default)
 		)
 		(uuid "b9d4064f-81a0-4bd9-b8f1-548c622f3b0f")
+	)
+	(wire
+		(pts
+			(xy 276.86 91.44) (xy 279.4 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba844311-fe04-4e5e-8e2d-f71f50d226fa")
 	)
 	(wire
 		(pts
@@ -3726,7 +3920,7 @@
 	)
 	(wire
 		(pts
-			(xy 275.59 87.63) (xy 275.59 90.17)
+			(xy 276.86 93.98) (xy 276.86 96.52)
 		)
 		(stroke
 			(width 0)
@@ -3786,7 +3980,17 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 74.93) (xy 267.97 74.93)
+			(xy 166.37 36.83) (xy 168.91 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1e803f5-03a7-4c9e-8190-f409da2f8ab8")
+	)
+	(wire
+		(pts
+			(xy 252.73 74.93) (xy 269.24 74.93)
 		)
 		(stroke
 			(width 0)
@@ -3796,7 +4000,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 39.37) (xy 167.64 39.37)
+			(xy 158.75 35.56) (xy 168.91 35.56)
 		)
 		(stroke
 			(width 0)
@@ -3813,6 +4017,16 @@
 			(type default)
 		)
 		(uuid "e6e8737b-479a-4f9a-869d-db6b94394258")
+	)
+	(wire
+		(pts
+			(xy 276.86 76.2) (xy 279.4 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8e33b9e-efc8-446a-a5bb-fbbf0caaf0ba")
 	)
 	(wire
 		(pts
@@ -3853,6 +4067,16 @@
 			(type default)
 		)
 		(uuid "f48e0a16-0b58-4298-922e-0d4e9e3c3587")
+	)
+	(wire
+		(pts
+			(xy 168.91 36.83) (xy 171.45 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f67bd104-336c-4a61-8566-c862aa20c9a8")
 	)
 	(wire
 		(pts
@@ -4036,7 +4260,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 275.59 100.33 180)
+		(at 276.86 106.68 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4047,7 +4271,7 @@
 		(fields_autoplaced yes)
 		(uuid "073d7ad1-3deb-4df9-be02-7cfc72e91cdc")
 		(property "Reference" "#PWR018"
-			(at 275.59 96.52 0)
+			(at 276.86 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4058,7 +4282,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 275.59 105.41 0)
+			(at 276.86 111.76 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4068,7 +4292,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 275.59 100.33 0)
+			(at 276.86 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4079,7 +4303,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 275.59 100.33 0)
+			(at 276.86 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4090,7 +4314,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 275.59 100.33 0)
+			(at 276.86 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4202,7 +4426,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 171.45 50.8 90)
+		(at 172.72 54.61 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4213,7 +4437,7 @@
 		(fields_autoplaced yes)
 		(uuid "0d88aa42-3e9d-4aef-8c23-0b268d5c45ff")
 		(property "Reference" "#PWR014"
-			(at 177.8 50.8 0)
+			(at 179.07 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4224,7 +4448,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 175.26 50.7999 90)
+			(at 176.53 54.6099 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4235,7 +4459,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 171.45 50.8 0)
+			(at 172.72 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4246,7 +4470,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 171.45 50.8 0)
+			(at 172.72 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4257,7 +4481,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 171.45 50.8 0)
+			(at 172.72 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4360,7 +4584,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 275.59 93.98 180)
+		(at 276.86 100.33 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4371,7 +4595,7 @@
 		(fields_autoplaced yes)
 		(uuid "1a7c43e3-e991-489b-8225-71a878b32fbe")
 		(property "Reference" "R6"
-			(at 273.05 95.2501 0)
+			(at 274.32 101.6001 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4382,7 +4606,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 273.05 92.7101 0)
+			(at 274.32 99.0601 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4393,7 +4617,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 277.368 93.98 90)
+			(at 278.638 100.33 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4404,7 +4628,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 275.59 93.98 0)
+			(at 276.86 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4415,7 +4639,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 275.59 93.98 0)
+			(at 276.86 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4442,7 +4666,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 280.67 86.36 0)
+		(at 281.94 92.71 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4453,7 +4677,7 @@
 		(fields_autoplaced yes)
 		(uuid "1ab004e6-e037-4e1b-a2ac-662dd19d313c")
 		(property "Reference" "#PWR019"
-			(at 280.67 92.71 0)
+			(at 281.94 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4464,7 +4688,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 280.67 91.44 0)
+			(at 281.94 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4474,7 +4698,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 280.67 86.36 0)
+			(at 281.94 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4485,7 +4709,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 280.67 86.36 0)
+			(at 281.94 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4496,7 +4720,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 280.67 86.36 0)
+			(at 281.94 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6883,8 +7107,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 167.64 44.45 90)
+		(lib_id "nixie-esp32:PTS645SL70SMTR92_LFS")
+		(at 166.37 52.07 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6895,7 +7119,7 @@
 		(fields_autoplaced yes)
 		(uuid "dfa137bd-f1b4-495c-b77a-150024f88d9e")
 		(property "Reference" "SW1"
-			(at 168.91 43.1799 90)
+			(at 172.72 43.1799 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6906,7 +7130,7 @@
 			)
 		)
 		(property "Value" "RESET"
-			(at 168.91 45.7199 90)
+			(at 172.72 45.7199 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6916,8 +7140,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 162.56 44.45 0)
+		(property "Footprint" "nixie-esp32:PTS645SL70SMTR92LFS"
+			(at 176.53 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6927,8 +7151,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 162.56 44.45 0)
+		(property "Datasheet" "https://www.ckswitches.com/media/1471/pts645.pdf"
+			(at 179.07 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6938,8 +7162,30 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 167.64 44.45 0)
+		(property "Description" "C&K PTS645SL70SMTR92 LFS tactile switch, SPST-NO, top actuated, surface mount, 50 mA at 12 VDC"
+			(at 181.61 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "C&K"
+			(at 184.15 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "PTS645SL70SMTR92 LFS"
+			(at 186.69 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6954,6 +7200,12 @@
 		)
 		(pin "1"
 			(uuid "190d0b65-3303-4a21-92b4-76ead7958c82")
+		)
+		(pin "3"
+			(uuid "3581a258-d0e6-4993-8d1d-75eaa7cf3e3a")
+		)
+		(pin "4"
+			(uuid "33fea269-42f2-42a4-897a-6a20cdb9b5de")
 		)
 		(instances
 			(project "nixie-esp32"
@@ -7121,8 +7373,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 276.86 80.01 90)
+		(lib_id "nixie-esp32:PTS645SL70SMTR92_LFS")
+		(at 274.32 91.44 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7130,10 +7382,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "ebd3dc93-c73d-4752-a17e-2816e9fd3315")
 		(property "Reference" "SW2"
-			(at 278.13 78.7399 90)
+			(at 278.638 82.042 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7144,7 +7395,7 @@
 			)
 		)
 		(property "Value" "BOOT"
-			(at 278.13 81.2799 90)
+			(at 278.638 84.582 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7154,8 +7405,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 271.78 80.01 0)
+		(property "Footprint" "nixie-esp32:PTS645SL70SMTR92LFS"
+			(at 284.48 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7165,8 +7416,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 271.78 80.01 0)
+		(property "Datasheet" "https://www.ckswitches.com/media/1471/pts645.pdf"
+			(at 287.02 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7176,8 +7427,30 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 276.86 80.01 0)
+		(property "Description" "C&K PTS645SL70SMTR92 LFS tactile switch, SPST-NO, top actuated, surface mount, 50 mA at 12 VDC"
+			(at 289.56 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "C&K"
+			(at 292.1 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "PTS645SL70SMTR92 LFS"
+			(at 294.64 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7192,6 +7465,12 @@
 		)
 		(pin "1"
 			(uuid "3f3875e3-0fbc-49ad-b0bd-b4f3697f3b7b")
+		)
+		(pin "4"
+			(uuid "b48a2fd7-b925-4218-8c9f-2f070d853dfd")
+		)
+		(pin "3"
+			(uuid "4e1404f7-35e7-44fa-9b31-dba60f35ebd5")
 		)
 		(instances
 			(project "nixie-esp32"
