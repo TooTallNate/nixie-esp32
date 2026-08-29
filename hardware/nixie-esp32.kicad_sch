@@ -609,7 +609,7 @@
 						(type none)
 					)
 				)
-				(pin input line
+				(pin power_in line
 					(at 0 0 0)
 					(length 7.62)
 					(name "IN"
@@ -627,7 +627,7 @@
 						)
 					)
 				)
-				(pin power_out line
+				(pin power_in line
 					(at 0 -2.54 0)
 					(length 7.62)
 					(name "GND"
@@ -645,7 +645,7 @@
 						)
 					)
 				)
-				(pin output line
+				(pin power_out line
 					(at 0 -5.08 0)
 					(length 7.62)
 					(name "OUT"
@@ -663,7 +663,7 @@
 						)
 					)
 				)
-				(pin power_out line
+				(pin power_in line
 					(at 40.64 -2.54 180)
 					(length 7.62)
 					(name "GND"
@@ -2650,6 +2650,121 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(junction
 		(at 125.73 62.23)
@@ -2664,6 +2779,12 @@
 		(uuid "27a0bde8-f702-4767-b815-ed19413442ac")
 	)
 	(junction
+		(at 90.17 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "84da7419-0ef2-4820-a14c-0da91b645f28")
+	)
+	(junction
 		(at 125.73 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2674,6 +2795,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8c276a58-2362-437d-a45f-951f48bf5556")
+	)
+	(junction
+		(at 99.06 27.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8fbffadb-9370-4b05-86f8-44fa5b38d707")
 	)
 	(junction
 		(at 107.95 77.47)
@@ -2700,20 +2827,132 @@
 		(uuid "db8ac4c7-442c-4dd4-9b4f-ff1f6a6618b4")
 	)
 	(no_connect
+		(at 252.73 125.73)
+		(uuid "071c358d-e6da-49d5-95de-de0d2792380e")
+	)
+	(no_connect
+		(at 252.73 130.81)
+		(uuid "08b60eca-d2f6-48cb-b712-b2facce8d59d")
+	)
+	(no_connect
+		(at 252.73 128.27)
+		(uuid "1a74ce51-b731-4d3e-9599-789fb774163d")
+	)
+	(no_connect
+		(at 252.73 92.71)
+		(uuid "1edbc4f6-483e-4663-bdaf-07c67567887f")
+	)
+	(no_connect
+		(at 161.29 74.93)
+		(uuid "2424530b-2585-455a-ba07-3c721ae64cd6")
+	)
+	(no_connect
+		(at 252.73 118.11)
+		(uuid "28ab2a2d-f349-47e2-8817-1235b042acf5")
+	)
+	(no_connect
 		(at 168.91 22.86)
 		(uuid "3a8b7ece-0f20-4678-b228-eb86e66cd899")
+	)
+	(no_connect
+		(at 252.73 82.55)
+		(uuid "3ec3d9e4-51c0-4cff-93c1-b5fad407ea74")
+	)
+	(no_connect
+		(at 161.29 128.27)
+		(uuid "4568c294-a1f0-44fe-bcd1-a07b044b9ef5")
+	)
+	(no_connect
+		(at 252.73 105.41)
+		(uuid "53644d7b-cdf1-4874-bbba-4a34f98c7372")
+	)
+	(no_connect
+		(at 252.73 90.17)
+		(uuid "5a1c38fa-53b9-4e16-b53b-d22074e97716")
+	)
+	(no_connect
+		(at 252.73 80.01)
+		(uuid "61dbee0d-189b-4401-bd46-e55b51fec87d")
+	)
+	(no_connect
+		(at 161.29 69.85)
+		(uuid "63c8577d-2a1b-46a3-8bc5-00c226c20d00")
+	)
+	(no_connect
+		(at 161.29 77.47)
+		(uuid "66800191-87cc-4133-8989-3c9dd84f9221")
+	)
+	(no_connect
+		(at 252.73 62.23)
+		(uuid "76d24cbb-704e-4aab-9030-45726cfd1891")
+	)
+	(no_connect
+		(at 161.29 82.55)
+		(uuid "7c1fe34e-dec8-477e-bcf2-7912f72f147d")
 	)
 	(no_connect
 		(at 125.73 49.53)
 		(uuid "8ebbca82-00b3-4e14-951d-6ab93a6a6c06")
 	)
 	(no_connect
+		(at 161.29 125.73)
+		(uuid "90e9c217-5076-4b43-9f8c-a55e7cdfb052")
+	)
+	(no_connect
 		(at 168.91 25.4)
 		(uuid "a26710f8-3d1c-42b3-973d-c400941f279f")
 	)
 	(no_connect
+		(at 252.73 123.19)
+		(uuid "a54b246e-e925-4944-baf5-288c382460b5")
+	)
+	(no_connect
+		(at 161.29 130.81)
+		(uuid "ab98c920-6b9c-4265-9666-5af2463ef729")
+	)
+	(no_connect
+		(at 252.73 113.03)
+		(uuid "b4a59769-e746-4ad8-aa0c-b82dbc2ded93")
+	)
+	(no_connect
+		(at 252.73 115.57)
+		(uuid "b96f520c-4862-48cb-93e6-8fdf5f881221")
+	)
+	(no_connect
 		(at 90.17 57.15)
 		(uuid "c337b4e9-0ac5-4dbe-bd5e-f0bdab36ed35")
+	)
+	(no_connect
+		(at 252.73 110.49)
+		(uuid "d3adb6a8-3dcf-419c-a74d-675f1c29c480")
+	)
+	(no_connect
+		(at 252.73 107.95)
+		(uuid "d3e27f64-c088-4bf3-8081-70bb5b28dd75")
+	)
+	(no_connect
+		(at 161.29 67.31)
+		(uuid "dbed0f0e-8dcc-4eda-a88f-04fa5e7b7335")
+	)
+	(no_connect
+		(at 161.29 80.01)
+		(uuid "e660f7fa-c239-4284-a251-c9a5b0d673a7")
+	)
+	(no_connect
+		(at 252.73 77.47)
+		(uuid "e66ca3f2-2282-40d7-abfd-c406dfacbeaf")
+	)
+	(no_connect
+		(at 252.73 59.69)
+		(uuid "e7c05263-429d-4475-b42b-3c7c02a1e8b1")
+	)
+	(no_connect
+		(at 252.73 120.65)
+		(uuid "f6e3e6c5-0f00-4f9b-8c86-7d2b2595527d")
+	)
+	(no_connect
+		(at 252.73 87.63)
+		(uuid "fd47fbb8-3018-401e-ac8e-c65431f1b474")
 	)
 	(wire
 		(pts
@@ -2777,7 +3016,7 @@
 	)
 	(wire
 		(pts
-			(xy 264.16 85.09) (xy 264.16 86.36)
+			(xy 265.43 85.09) (xy 265.43 87.63)
 		)
 		(stroke
 			(width 0)
@@ -2797,23 +3036,13 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 77.47) (xy 107.95 77.47)
+			(xy 73.66 77.47) (xy 90.17 77.47)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "1af6f815-1d10-4a67-b953-6cff43da65c8")
-	)
-	(wire
-		(pts
-			(xy 132.08 158.75) (xy 132.08 163.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "206c4723-8a4d-4ba8-afc1-f63a1b002eae")
 	)
 	(wire
 		(pts
@@ -2844,6 +3073,16 @@
 			(type default)
 		)
 		(uuid "2322f756-9582-4e51-8f3c-07df7adb1503")
+	)
+	(wire
+		(pts
+			(xy 267.97 105.41) (xy 267.97 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26573dda-f2d4-48e4-b029-a9b432a9f9fc")
 	)
 	(wire
 		(pts
@@ -2887,6 +3126,16 @@
 	)
 	(wire
 		(pts
+			(xy 260.35 100.33) (xy 260.35 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "310e78b8-e9e1-47e9-a0b1-e6b7a6c562c0")
+	)
+	(wire
+		(pts
 			(xy 73.66 49.53) (xy 73.66 77.47)
 		)
 		(stroke
@@ -2894,6 +3143,16 @@
 			(type default)
 		)
 		(uuid "31a38238-fc6e-432a-9aa2-a2314b7a0c40")
+	)
+	(wire
+		(pts
+			(xy 132.08 118.11) (xy 132.08 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3375d341-36b4-404e-b04c-18b15b60fe2f")
 	)
 	(wire
 		(pts
@@ -2917,6 +3176,16 @@
 	)
 	(wire
 		(pts
+			(xy 265.43 106.68) (xy 265.43 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c919456-e900-4cc3-85a1-f89f7e6a2a7f")
+	)
+	(wire
+		(pts
 			(xy 110.49 52.07) (xy 125.73 52.07)
 		)
 		(stroke
@@ -2934,6 +3203,26 @@
 			(type default)
 		)
 		(uuid "41dd1c17-b140-45a5-8db1-bbec97aa02e0")
+	)
+	(wire
+		(pts
+			(xy 134.62 118.11) (xy 134.62 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46012aec-64b8-46fa-9d3e-27b932c29104")
+	)
+	(wire
+		(pts
+			(xy 99.06 27.94) (xy 107.95 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46076dc5-907d-4d9f-a261-7cdced011059")
 	)
 	(wire
 		(pts
@@ -2977,6 +3266,16 @@
 	)
 	(wire
 		(pts
+			(xy 252.73 95.25) (xy 262.89 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52cbebd8-69aa-4754-9799-65ffa5f9d1d5")
+	)
+	(wire
+		(pts
 			(xy 276.86 86.36) (xy 280.67 86.36)
 		)
 		(stroke
@@ -2987,6 +3286,26 @@
 	)
 	(wire
 		(pts
+			(xy 270.51 104.14) (xy 270.51 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b136a78-64e1-4367-8e95-2d1df341c3f0")
+	)
+	(wire
+		(pts
+			(xy 259.08 102.87) (xy 259.08 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d237995-2034-44f8-8d1e-0cfc490c6c15")
+	)
+	(wire
+		(pts
 			(xy 102.87 50.8) (xy 110.49 50.8)
 		)
 		(stroke
@@ -2994,6 +3313,16 @@
 			(type default)
 		)
 		(uuid "5fe5b83d-489c-4b6d-85e2-7b5b21c0dff0")
+	)
+	(wire
+		(pts
+			(xy 261.62 105.41) (xy 267.97 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6281ff6d-8668-4a65-9104-79c53b1912a8")
 	)
 	(wire
 		(pts
@@ -3027,7 +3356,17 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 85.09) (xy 264.16 85.09)
+			(xy 262.89 104.14) (xy 270.51 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ac64bd3-9631-47ed-8ee0-5e698ba36404")
+	)
+	(wire
+		(pts
+			(xy 252.73 85.09) (xy 265.43 85.09)
 		)
 		(stroke
 			(width 0)
@@ -3057,6 +3396,16 @@
 	)
 	(wire
 		(pts
+			(xy 262.89 107.95) (xy 262.89 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71bd0c7c-b279-493c-9c07-742e8986624d")
+	)
+	(wire
+		(pts
 			(xy 125.73 62.23) (xy 130.81 62.23)
 		)
 		(stroke
@@ -3074,6 +3423,26 @@
 			(type default)
 		)
 		(uuid "793dc8bd-8bdf-49cc-bb04-c19d48e53211")
+	)
+	(wire
+		(pts
+			(xy 129.54 118.11) (xy 129.54 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b96f515-6437-446a-99b3-10632938d138")
+	)
+	(wire
+		(pts
+			(xy 260.35 106.68) (xy 265.43 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8043c557-c32f-44bf-968c-d5e9793035c7")
 	)
 	(wire
 		(pts
@@ -3114,6 +3483,16 @@
 			(type default)
 		)
 		(uuid "8efa6cd5-52c5-402d-9ede-3a7ed7ef21ea")
+	)
+	(wire
+		(pts
+			(xy 261.62 97.79) (xy 261.62 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8fad84d1-cb18-4a07-9f6a-57fe81a5de7d")
 	)
 	(wire
 		(pts
@@ -3177,6 +3556,16 @@
 	)
 	(wire
 		(pts
+			(xy 262.89 95.25) (xy 262.89 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a41eb17b-db70-483a-9ade-baad17df6b15")
+	)
+	(wire
+		(pts
 			(xy 267.97 74.93) (xy 276.86 74.93)
 		)
 		(stroke
@@ -3207,6 +3596,16 @@
 	)
 	(wire
 		(pts
+			(xy 259.08 107.95) (xy 262.89 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b33d38f5-98b3-4ad5-93ec-bd938a8157ae")
+	)
+	(wire
+		(pts
 			(xy 52.07 143.51) (xy 52.07 147.32)
 		)
 		(stroke
@@ -3224,6 +3623,16 @@
 			(type default)
 		)
 		(uuid "b9d4064f-81a0-4bd9-b8f1-548c622f3b0f")
+	)
+	(wire
+		(pts
+			(xy 252.73 97.79) (xy 261.62 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc039fa6-c2b2-4853-9f2f-0d7812a2e197")
 	)
 	(wire
 		(pts
@@ -3307,6 +3716,16 @@
 	)
 	(wire
 		(pts
+			(xy 90.17 67.31) (xy 90.17 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cff48fe8-034c-4dbf-9ebe-5a775cf25c33")
+	)
+	(wire
+		(pts
 			(xy 275.59 87.63) (xy 275.59 90.17)
 		)
 		(stroke
@@ -3314,6 +3733,16 @@
 			(type default)
 		)
 		(uuid "d11ae44f-32f3-4e6b-b17f-a7be0b845fe3")
+	)
+	(wire
+		(pts
+			(xy 137.16 118.11) (xy 137.16 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2c51382-a56c-438c-935b-fe3ea99a7fc2")
 	)
 	(wire
 		(pts
@@ -3337,13 +3766,23 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 27.94) (xy 107.95 27.94)
+			(xy 90.17 27.94) (xy 99.06 27.94)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "e0c9ab1f-c181-4766-8e0e-19f3ec5e9251")
+	)
+	(wire
+		(pts
+			(xy 252.73 100.33) (xy 260.35 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e16384d0-aa31-4b6e-bf67-44fe7e07095e")
 	)
 	(wire
 		(pts
@@ -3374,6 +3813,36 @@
 			(type default)
 		)
 		(uuid "e6e8737b-479a-4f9a-869d-db6b94394258")
+	)
+	(wire
+		(pts
+			(xy 90.17 77.47) (xy 107.95 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e990579c-16db-4d2f-a61d-33181b8df104")
+	)
+	(wire
+		(pts
+			(xy 252.73 102.87) (xy 259.08 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb410f80-80fd-4157-aeb0-ce7746d0b9fd")
+	)
+	(wire
+		(pts
+			(xy 127 160.02) (xy 127 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee5c4e97-10fd-4930-917f-0f2d1ca76871")
 	)
 	(wire
 		(pts
@@ -3415,6 +3884,26 @@
 		)
 		(uuid "19df4d58-5cdc-46ee-931b-6b871daf0f06")
 	)
+	(label "ESP32_GPIO8"
+		(at 129.54 118.11 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "362f7b15-b2a8-4df4-8507-24a405fbb9af")
+	)
+	(label "ESP32_GPIO9"
+		(at 267.97 111.76 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3ee3824f-9d16-4a44-9e98-4f1654c75435")
+	)
 	(label "USB_D-"
 		(at 133.35 52.07 0)
 		(effects
@@ -3435,6 +3924,36 @@
 		)
 		(uuid "6d411bed-4a05-4976-aff5-5a3996f1c31e")
 	)
+	(label "ESP32_GPIO11"
+		(at 137.16 118.11 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7155ad8c-2d5f-41a3-b928-129948411993")
+	)
+	(label "ESP32_GPIO9"
+		(at 132.08 118.11 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "78a5e46f-7a2c-446c-a0fd-9afa93a4f271")
+	)
+	(label "ESP32_GPIO11"
+		(at 262.89 111.76 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7d0a0682-9561-45d5-8273-4ceaa4867630")
+	)
 	(label "USB_D+"
 		(at 133.35 55.88 0)
 		(effects
@@ -3446,7 +3965,7 @@
 		(uuid "80a84358-fa16-426d-8c1a-d6e6036b00f6")
 	)
 	(label "ESP32_GPIO4"
-		(at 264.16 86.36 270)
+		(at 265.43 87.63 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3454,6 +3973,26 @@
 			(justify right)
 		)
 		(uuid "89b9a4f6-f023-4b60-905f-64172a6d6dcb")
+	)
+	(label "ESP32_GPIO10"
+		(at 265.43 111.76 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "904094c5-b3f1-4b0f-9a4c-5a9660356f48")
+	)
+	(label "ESP32_GPIO10"
+		(at 134.62 118.11 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "acb2e20d-6a75-49be-b582-286c46d31730")
 	)
 	(label "USB_D+"
 		(at 262.89 45.72 90)
@@ -3475,8 +4014,18 @@
 		)
 		(uuid "eb9b2c67-24b8-4093-b321-8c0c96ca2c67")
 	)
+	(label "ESP32_GPIO8"
+		(at 270.51 111.76 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f4698418-a67b-4c00-9046-6fafe03f7ecc")
+	)
 	(label "ESP32_GPIO4"
-		(at 132.08 158.75 0)
+		(at 127 160.02 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3484,17 +4033,6 @@
 			(justify left bottom)
 		)
 		(uuid "fad9bab2-e691-4c25-9736-37553502b50b")
-	)
-	(hierarchical_label "ESP32_GPIO4"
-		(shape output)
-		(at 265.43 115.57 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "2e38be29-5a18-4f65-a8b1-90745e0b6c97")
 	)
 	(symbol
 		(lib_id "power:+3.3V")
@@ -3606,7 +4144,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOT223_DIO"
+		(property "Footprint" "nixie-esp32:SOT223_DIO"
 			(at 40.64 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -3674,7 +4212,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0d88aa42-3e9d-4aef-8c23-0b268d5c45ff")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR014"
 			(at 177.8 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -3735,7 +4273,7 @@
 		(instances
 			(project "nixie-esp32"
 				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc"
-					(reference "#PWR016")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -3753,7 +4291,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "12b576c0-64f1-460b-ab29-13e7786e4f87")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR015"
 			(at 207.01 22.86 0)
 			(hide yes)
 			(show_name no)
@@ -3814,7 +4352,7 @@
 		(instances
 			(project "nixie-esp32"
 				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc"
-					(reference "#PWR09")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -3854,7 +4392,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 277.368 93.98 90)
 			(hide yes)
 			(show_name no)
@@ -3992,7 +4530,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "260dcfb8-5687-4de8-a286-6c1a47e58e03")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR06"
 			(at 68.58 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -4052,7 +4590,7 @@
 		(instances
 			(project "nixie-esp32"
 				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc"
-					(reference "#PWR012")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -4070,7 +4608,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3140b569-c629-4ab3-a35c-e98061674e07")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR07"
 			(at 68.58 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -4130,7 +4668,7 @@
 		(instances
 			(project "nixie-esp32"
 				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc"
-					(reference "#PWR013")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -4148,7 +4686,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "385211b5-78d5-4193-8183-6416c17dd251")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR017"
 			(at 207.01 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -4208,7 +4746,163 @@
 		(instances
 			(project "nixie-esp32"
 				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc"
-					(reference "#PWR07")
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 99.06 27.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3f6f1498-dc4d-43eb-9b6b-0c9cc2c1f189")
+		(property "Reference" "#FLG01"
+			(at 99.06 26.035 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 99.06 22.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 99.06 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1deb3c0d-d3d3-4f8a-9c85-45bbbefecb18")
+		)
+		(instances
+			(project "nixie-esp32"
+				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc"
+					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 107.95 77.47 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "41831cf5-c6a9-43a1-891b-15f1f4bb5fe4")
+		(property "Reference" "#FLG02"
+			(at 107.95 75.565 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 107.95 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 107.95 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 107.95 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 107.95 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "71f01dfe-2c62-42af-92af-bf33a3de9c2d")
+		)
+		(instances
+			(project "nixie-esp32"
+				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc"
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
@@ -4248,7 +4942,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_Espressif:ESP32-S3-WROOM-1"
+		(property "Footprint" "nixie-esp32:ESP32-S3-WROOM-1"
 			(at 209.55 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -4425,7 +5119,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5586918c-435a-4b14-a02c-e28061fe80ef")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR08"
 			(at 91.44 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -4486,7 +5180,7 @@
 		(instances
 			(project "nixie-esp32"
 				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc"
-					(reference "#PWR06")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -4524,7 +5218,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOT50P160X60-5N"
+		(property "Footprint" "nixie-esp32:SOT50P160X60-5N"
 			(at 193.04 117.78 0)
 			(hide yes)
 			(show_name no)
@@ -4655,7 +5349,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6fb332be-066e-4ea6-b4fe-db33226106ec")
-		(property "Reference" "R5"
+		(property "Reference" "R3"
 			(at 156.21 44.4499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4677,7 +5371,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 151.892 45.72 90)
 			(hide yes)
 			(show_name no)
@@ -4719,7 +5413,7 @@
 		(instances
 			(project "nixie-esp32"
 				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc"
-					(reference "R5")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -4757,7 +5451,7 @@
 				)
 			)
 		)
-		(property "Footprint" "USB4216-03-A_REVA:GCT_USB4216-03-A_REVA"
+		(property "Footprint" "nixie-esp32:GCT_USB4216-03-A_REVA"
 			(at 107.95 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -5005,7 +5699,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "78b6b952-4561-4cb3-a0d2-aae71130ceb0")
-		(property "Reference" "R3"
+		(property "Reference" "R4"
 			(at 265.43 54.6099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5027,7 +5721,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 264.668 55.88 90)
 			(hide yes)
 			(show_name no)
@@ -5069,7 +5763,7 @@
 		(instances
 			(project "nixie-esp32"
 				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc"
-					(reference "R3")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -5087,7 +5781,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7a06f89d-044a-4a8d-a1eb-b2d661d3b7f8")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR02"
 			(at 29.21 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -5148,7 +5842,7 @@
 		(instances
 			(project "nixie-esp32"
 				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc"
-					(reference "#PWR04")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -5166,7 +5860,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8d2b7c91-9340-43a4-bf7d-a2f4a3983139")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR016"
 			(at 207.01 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -5226,7 +5920,7 @@
 		(instances
 			(project "nixie-esp32"
 				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc"
-					(reference "#PWR08")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -5266,7 +5960,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 53.0352 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -5346,7 +6040,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 77.47 51.308 90)
 			(hide yes)
 			(show_name no)
@@ -5406,7 +6100,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9fc82894-9fdb-4a08-81cd-9c78e3c13413")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR012"
 			(at 166.37 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -5466,7 +6160,7 @@
 		(instances
 			(project "nixie-esp32"
 				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc"
-					(reference "#PWR014")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -5484,7 +6178,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a131900f-7791-4b06-be8a-f34d1765a760")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR01"
 			(at 39.37 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -5545,7 +6239,7 @@
 		(instances
 			(project "nixie-esp32"
 				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc"
-					(reference "#PWR03")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -5563,7 +6257,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a1746c0b-8a46-4626-a15e-03f547f671f1")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR03"
 			(at 39.37 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -5624,7 +6318,7 @@
 		(instances
 			(project "nixie-esp32"
 				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc"
-					(reference "#PWR05")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -5642,7 +6336,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a3ad7db1-3c9e-4829-b941-9ac829ffd143")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR013"
 			(at 166.37 172.72 0)
 			(hide yes)
 			(show_name no)
@@ -5702,7 +6396,7 @@
 		(instances
 			(project "nixie-esp32"
 				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc"
-					(reference "#PWR015")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -5720,7 +6414,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b60d729d-3bda-4a5d-b388-f4f61b9e7f0c")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR010"
 			(at 107.95 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -5780,7 +6474,7 @@
 		(instances
 			(project "nixie-esp32"
 				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc"
-					(reference "#PWR02")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -5798,7 +6492,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b6b7b908-7ef2-4618-bbc7-2316ec9e5597")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR05"
 			(at 52.07 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -5858,7 +6552,7 @@
 		(instances
 			(project "nixie-esp32"
 				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc"
-					(reference "#PWR010")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -5898,7 +6592,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 141.478 67.31 90)
 			(hide yes)
 			(show_name no)
@@ -5980,7 +6674,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 69.5452 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -6040,7 +6734,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d7aae60e-01cc-4e5a-b59a-df8224d6fd50")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR09"
 			(at 107.95 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -6100,7 +6794,7 @@
 		(instances
 			(project "nixie-esp32"
 				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc"
-					(reference "#PWR01")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -6118,7 +6812,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "da5bfad9-de2a-408d-b172-e79c24164d80")
-		(property "Reference" "R4"
+		(property "Reference" "R5"
 			(at 275.59 54.6099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6140,7 +6834,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 274.828 55.88 90)
 			(hide yes)
 			(show_name no)
@@ -6182,7 +6876,7 @@
 		(instances
 			(project "nixie-esp32"
 				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc"
-					(reference "R4")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -6282,7 +6976,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e15f3889-3b3c-48e0-99e3-73f1ae56bcb6")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR04"
 			(at 52.07 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -6342,7 +7036,7 @@
 		(instances
 			(project "nixie-esp32"
 				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc"
-					(reference "#PWR011")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -6360,7 +7054,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e4d1c10a-2d19-4e38-817a-20ca1136586a")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR011"
 			(at 153.67 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -6420,7 +7114,7 @@
 		(instances
 			(project "nixie-esp32"
 				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc"
-					(reference "#PWR017")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -6542,7 +7236,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 167.3352 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -6591,8 +7285,8 @@
 		)
 	)
 	(sheet
-		(at 124.46 163.83)
-		(size 16.51 20.32)
+		(at 114.3 165.1)
+		(size 25.4 25.4)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -6607,7 +7301,7 @@
 		)
 		(uuid "863e175d-8d38-4d3f-8dde-6bece7eb527a")
 		(property "Sheetname" "LEDs"
-			(at 123.7484 184.15 90)
+			(at 114.3 164.3884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6618,7 +7312,7 @@
 			)
 		)
 		(property "Sheetfile" "leds.kicad_sch"
-			(at 141.5546 184.15 90)
+			(at 114.3 191.0846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6629,7 +7323,7 @@
 			)
 		)
 		(pin "RGB_DATA" input
-			(at 132.08 163.83 90)
+			(at 127 165.1 90)
 			(uuid "30b074b6-0aac-4915-8285-e19ae2ab24d9")
 			(effects
 				(font
@@ -6642,6 +7336,92 @@
 			(project "nixie-esp32"
 				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc"
 					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 114.3 121.92)
+		(size 25.4 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "f5118c19-831d-4e27-bbb4-c31eac29ef46")
+		(property "Sheetname" "Nixies"
+			(at 114.3 121.2084 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "nixies.kicad_sch"
+			(at 114.3 147.9046 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "HV_BLANK" input
+			(at 137.16 121.92 90)
+			(uuid "73d0044b-ac0b-490d-bbb6-8bcff5257797")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "HV_CLOCK" input
+			(at 132.08 121.92 90)
+			(uuid "bdb6f730-573b-4c58-918b-9140eef45744")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "HV_DATA" input
+			(at 129.54 121.92 90)
+			(uuid "fdebd8ad-b460-4f9e-ab74-60e1bde79658")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "HV_LATCH" input
+			(at 134.62 121.92 90)
+			(uuid "52dad42a-01d1-4fa3-a9b2-66990e75a009")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "nixie-esp32"
+				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc"
+					(page "6")
 				)
 			)
 		)

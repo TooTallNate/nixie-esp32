@@ -429,7 +429,7 @@
         "uuid": "54b4b31b-75dd-48a2-8c91-a3f3099728fc"
       }
     ],
-    "used_designators": "J1,U1-3,D1-4,#PWR1-38,C1-8,R1-10,SW1-2",
+    "used_designators": "L1,IC1-2,PS1,#FLG1-3,SW1-2,C1-14,U1-4,J1,D1-5,#PWR1-63,R1-12,N1-3",
     "variants": []
   },
   "sheets": [
@@ -452,6 +452,34 @@
     [
       "8e02ed31-4115-4baa-9c1d-fdb2ab44bec2",
       "LED3"
+    ],
+    [
+      "f5118c19-831d-4e27-bbb4-c31eac29ef46",
+      "Nixies"
+    ],
+    [
+      "a4d07a94-3fe1-4de1-9ab9-b98e8dd33552",
+      "Power12v"
+    ],
+    [
+      "959fe2a3-48a2-4479-a692-fe13457ebd17",
+      "HvDriver"
+    ],
+    [
+      "e7b98c35-397a-4ec8-83a3-30ea66ee9983",
+      "Nixie1"
+    ],
+    [
+      "5b28796d-f5fc-4c81-9d58-017f35b7ab9e",
+      "Power170v"
+    ],
+    [
+      "233ec0d0-8d51-4a64-bb6c-0e9c900227d8",
+      "Nixie2"
+    ],
+    [
+      "56044322-2856-4d0f-9054-2adf0cfd6b21",
+      "Nixie3"
     ]
   ],
   "text_variables": {},

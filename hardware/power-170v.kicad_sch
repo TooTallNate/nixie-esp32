@@ -2,45 +2,214 @@
 	(version 20260306)
 	(generator "eeschema")
 	(generator_version "10.0")
-	(uuid "ce09e698-e159-4ecf-87ce-c51e79afe029")
+	(uuid "0e69e354-9c1b-4a74-bcd0-b31b3f527493")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Device:C"
+		(symbol "nch8200hv:NCH8200HV"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "PS"
+				(at 0 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "NCH8200HV"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "nch8200hv:NCH8200HV"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "${KIPRJMOD}/../datasheets/nch8200hv_datasheet_en_v2.0.0.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "NCH8200HV high-voltage DC-DC boost module, 2.5-15 V input, 170 V output up to 30 mA"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Nixie high voltage DC-DC boost converter power supply"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "NCH8200HV"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "NCH8200HV_1_1"
+				(rectangle
+					(start -5.08 3.81)
+					(end 5.08 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin power_in line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "VOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "nixie-esp32:+170V"
+			(power global)
 			(pin_numbers
 				(hide yes)
 			)
 			(pin_names
-				(offset 0.254)
+				(offset 0)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "C"
-				(at 0.635 -2.54 0)
+			(property "Value" "+170V"
+				(at 0 3.556 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -61,7 +230,7 @@
 					)
 				)
 			)
-			(property "Description" "Unpolarized capacitor"
+			(property "Description" "Power symbol creates a global label with name {dblquote}+170V{dblquote}"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -72,7 +241,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "cap capacitor"
+			(property "ki_keywords" "global power"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -83,24 +252,13 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "C_0_1"
+			(symbol "+170V_0_1"
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy -0.762 1.27) (xy 0 2.54)
 					)
 					(stroke
-						(width 0.508)
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -109,10 +267,22 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
-						(width 0.508)
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -120,10 +290,10 @@
 					)
 				)
 			)
-			(symbol "C_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
+			(symbol "+170V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
 					(name ""
 						(effects
 							(font
@@ -132,295 +302,6 @@
 						)
 					)
 					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "LED:WS2812B"
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "D"
-				(at 5.08 5.715 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right bottom)
-				)
-			)
-			(property "Value" "WS2812B"
-				(at 1.27 -5.715 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
-				(at 1.27 -7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-				(at 2.54 -9.525 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Description" "RGB LED with integrated controller"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "RGB LED NeoPixel addressable"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "LED*WS2812*PLCC*5.0x5.0mm*P3.2mm*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "WS2812B_0_0"
-				(text "RGB"
-					(at 2.286 -4.191 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-			)
-			(symbol "WS2812B_0_1"
-				(polyline
-					(pts
-						(xy 1.27 -2.54) (xy 1.778 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -3.556) (xy 1.778 -3.556)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.286 -1.524) (xy 1.27 -2.54) (xy 1.27 -2.032)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.286 -2.54) (xy 1.27 -3.556) (xy 1.27 -3.048)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.683 -1.016) (xy 3.683 -3.556) (xy 3.683 -4.064)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 4.699 -1.524) (xy 2.667 -1.524) (xy 3.683 -3.556) (xy 4.699 -1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 4.699 -3.556) (xy 2.667 -3.556)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 5.08 5.08)
-					(end -5.08 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "WS2812B_1_1"
-				(pin power_in line
-					(at 0 7.62 270)
-					(length 2.54)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "DOUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "VSS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -7.62 0 0)
-					(length 2.54)
-					(name "DIN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -688,89 +569,87 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 77.47) (xy 114.3 81.28)
+			(xy 153.67 80.01) (xy 156.21 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "62391a6c-a773-41a9-a266-f791ca6307d4")
+		(uuid "1a44d53f-0581-4095-885b-bb36de63130a")
 	)
 	(wire
 		(pts
-			(xy 143.51 74.93) (xy 143.51 77.47)
+			(xy 135.89 85.09) (xy 138.43 85.09)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6d8ebf44-3951-41f3-9a1f-d795c00d162c")
+		(uuid "253d0708-f0d2-4fb0-bbf6-5f28ed26d06a")
 	)
 	(wire
 		(pts
-			(xy 114.3 88.9) (xy 114.3 92.71)
+			(xy 135.89 76.2) (xy 135.89 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a596954f-0acf-44ff-9cb0-8771133d1015")
+		(uuid "4220998f-cca4-4027-8bbc-3dcea1f124c5")
 	)
 	(wire
 		(pts
-			(xy 143.51 92.71) (xy 143.51 95.25)
+			(xy 153.67 85.09) (xy 156.21 85.09)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "acb2b97b-2e32-499a-9891-51b46d93c0cc")
+		(uuid "5b4e5185-b9ab-4f0b-8448-6eb83340a066")
 	)
 	(wire
 		(pts
-			(xy 151.13 85.09) (xy 153.67 85.09)
+			(xy 135.89 88.9) (xy 135.89 85.09)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "eaab184e-1968-4e60-9ede-32aeafa6053a")
+		(uuid "6418bde2-8a0c-4c8f-b5ce-c5c4d766d22b")
 	)
 	(wire
 		(pts
-			(xy 132.08 85.09) (xy 135.89 85.09)
+			(xy 156.21 76.2) (xy 156.21 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f815dfc0-41c7-4413-8c20-878c32571580")
+		(uuid "77f4866d-b869-452e-881a-cdac947e372c")
 	)
-	(hierarchical_label "DIN"
-		(shape input)
-		(at 132.08 85.09 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
+	(wire
+		(pts
+			(xy 135.89 80.01) (xy 138.43 80.01)
 		)
-		(uuid "08ec7964-88de-4a15-9f3c-becd5d635337")
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b2c153f-70c0-4c87-a318-0250164af7e6")
 	)
-	(hierarchical_label "DOUT"
-		(shape output)
-		(at 153.67 85.09 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
+	(wire
+		(pts
+			(xy 156.21 85.09) (xy 156.21 88.9)
 		)
-		(uuid "580cfabc-c3dc-4595-bc21-575a3122496c")
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5ae8873-91e5-4340-8771-0addbf4cf5c5")
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 114.3 77.47 0)
+		(lib_id "power:GND")
+		(at 135.89 88.9 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -779,9 +658,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "4ab75e7f-2cb6-4ad1-8412-7c5793c56bf5")
-		(property "Reference" "#PWR027"
-			(at 114.3 81.28 0)
+		(uuid "1703f29a-5585-4b20-b003-27cb7eeb67fc")
+		(property "Reference" "#PWR059"
+			(at 135.89 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -791,8 +670,8 @@
 				)
 			)
 		)
-		(property "Value" "+5V"
-			(at 114.3 72.39 0)
+		(property "Value" "GND"
+			(at 135.89 93.98 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -802,7 +681,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 114.3 77.47 0)
+			(at 135.89 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -813,7 +692,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 114.3 77.47 0)
+			(at 135.89 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -823,8 +702,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 114.3 77.47 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 135.89 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -835,28 +714,20 @@
 			)
 		)
 		(pin "1"
-			(uuid "201499b0-4030-490f-b343-872d6fce2184")
+			(uuid "1361f14d-607e-404f-9e55-b6277c391178")
 		)
 		(instances
 			(project "nixie-esp32"
-				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc/863e175d-8d38-4d3f-8dde-6bece7eb527a/16f1f403-4faf-4699-a131-2482af7f80cf"
-					(reference "#PWR031")
-					(unit 1)
-				)
-				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc/863e175d-8d38-4d3f-8dde-6bece7eb527a/537ac33d-0933-42b4-b750-5529b57cb78d"
-					(reference "#PWR027")
-					(unit 1)
-				)
-				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc/863e175d-8d38-4d3f-8dde-6bece7eb527a/8e02ed31-4115-4baa-9c1d-fdb2ab44bec2"
-					(reference "#PWR035")
+				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc/f5118c19-831d-4e27-bbb4-c31eac29ef46/5b28796d-f5fc-4c81-9d58-017f35b7ab9e"
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 143.51 74.93 0)
+		(lib_id "power:GND")
+		(at 156.21 88.9 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -865,9 +736,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "6579b172-3d96-401c-9179-c720e49b5af1")
-		(property "Reference" "#PWR029"
-			(at 143.51 78.74 0)
+		(uuid "4b18b46e-933e-40dc-b2ee-ac41b510508e")
+		(property "Reference" "#PWR061"
+			(at 156.21 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -877,8 +748,8 @@
 				)
 			)
 		)
-		(property "Value" "+5V"
-			(at 143.51 69.85 0)
+		(property "Value" "GND"
+			(at 156.21 93.98 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -888,7 +759,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 143.51 74.93 0)
+			(at 156.21 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -899,7 +770,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 143.51 74.93 0)
+			(at 156.21 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -909,8 +780,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 143.51 74.93 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 156.21 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -921,28 +792,20 @@
 			)
 		)
 		(pin "1"
-			(uuid "64c05c5e-d145-4d3d-9f6e-2f4521c27c45")
+			(uuid "781e37ef-ffbe-49fc-ab35-9c24f735cebe")
 		)
 		(instances
 			(project "nixie-esp32"
-				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc/863e175d-8d38-4d3f-8dde-6bece7eb527a/16f1f403-4faf-4699-a131-2482af7f80cf"
-					(reference "#PWR033")
-					(unit 1)
-				)
-				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc/863e175d-8d38-4d3f-8dde-6bece7eb527a/537ac33d-0933-42b4-b750-5529b57cb78d"
-					(reference "#PWR029")
-					(unit 1)
-				)
-				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc/863e175d-8d38-4d3f-8dde-6bece7eb527a/8e02ed31-4115-4baa-9c1d-fdb2ab44bec2"
-					(reference "#PWR037")
+				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc/f5118c19-831d-4e27-bbb4-c31eac29ef46/5b28796d-f5fc-4c81-9d58-017f35b7ab9e"
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:WS2812B")
-		(at 143.51 85.09 0)
+		(lib_id "nixie-esp32:+170V")
+		(at 156.21 76.2 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -951,29 +814,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "658134a8-c51b-400c-9e68-2a6965dea58a")
-		(property "Reference" "D2"
-			(at 157.48 78.6698 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SMTLA5050RGB"
-			(at 157.48 81.2098 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
-			(at 144.78 92.71 0)
+		(uuid "68a6d5f4-3613-4ff3-af5b-c917cc8b0e51")
+		(property "Reference" "#PWR060"
+			(at 156.21 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -981,11 +824,20 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 146.05 94.615 0)
+		(property "Value" "+170V"
+			(at 156.21 71.12 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 156.21 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -993,11 +845,176 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 143.51 85.09 0)
+		(property "Datasheet" ""
+			(at 156.21 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name {dblquote}+170V{dblquote}"
+			(at 156.21 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1d2f834f-fac7-4470-987f-f99f99381bad")
+		)
+		(instances
+			(project "nixie-esp32"
+				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc/f5118c19-831d-4e27-bbb4-c31eac29ef46/5b28796d-f5fc-4c81-9d58-017f35b7ab9e"
+					(reference "#PWR060")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 135.89 76.2 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6bf8e9df-48c3-4c21-be0b-ae6fa07a3541")
+		(property "Reference" "#PWR058"
+			(at 135.89 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 135.89 71.12 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 135.89 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 135.89 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 135.89 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8952843b-0cc2-47fe-b7f8-b9cef62daeae")
+		)
+		(instances
+			(project "nixie-esp32"
+				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc/f5118c19-831d-4e27-bbb4-c31eac29ef46/5b28796d-f5fc-4c81-9d58-017f35b7ab9e"
+					(reference "#PWR058")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "nch8200hv:NCH8200HV")
+		(at 146.05 82.55 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8b3bf7c6-45ac-469a-8553-49976b032db8")
+		(property "Reference" "PS1"
+			(at 146.05 73.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NCH8200HV"
+			(at 146.05 76.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "nch8200hv:NCH8200HV"
+			(at 146.05 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "${KIPRJMOD}/../datasheets/nch8200hv_datasheet_en_v2.0.0.pdf"
+			(at 146.05 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "NCH8200HV high-voltage DC-DC boost module, 2.5-15 V input, 170 V output up to 30 mA"
+			(at 146.05 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1008,291 +1025,21 @@
 			)
 		)
 		(pin "2"
-			(uuid "2540907b-2faa-44c1-85ad-415ddf98080e")
-		)
-		(pin "1"
-			(uuid "5e3822f1-f5d3-4033-9bc3-3c4f3ab7b66b")
-		)
-		(pin "4"
-			(uuid "84c83234-814e-4d30-b904-b38ac0fc9cd0")
+			(uuid "34231c1d-36e0-4d96-bfcb-677845f405de")
 		)
 		(pin "3"
-			(uuid "140c8c98-3b91-49bd-a675-06d9a3e0f26f")
-		)
-		(instances
-			(project "nixie-esp32"
-				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc/863e175d-8d38-4d3f-8dde-6bece7eb527a/16f1f403-4faf-4699-a131-2482af7f80cf"
-					(reference "D3")
-					(unit 1)
-				)
-				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc/863e175d-8d38-4d3f-8dde-6bece7eb527a/537ac33d-0933-42b4-b750-5529b57cb78d"
-					(reference "D2")
-					(unit 1)
-				)
-				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc/863e175d-8d38-4d3f-8dde-6bece7eb527a/8e02ed31-4115-4baa-9c1d-fdb2ab44bec2"
-					(reference "D4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 114.3 85.09 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "786e15cd-3441-4bda-a669-fdfe1f61ef3c")
-		(property "Reference" "C6"
-			(at 118.11 83.8199 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.1µF"
-			(at 118.11 86.3599 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 115.2652 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 114.3 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 114.3 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
+			(uuid "1f925072-7596-4e40-8cb0-22e856751e8a")
 		)
 		(pin "1"
-			(uuid "1b39a634-a408-4b6f-b0ab-e9463069c199")
+			(uuid "32b28bc7-a7b1-46cc-9604-503ad9667759")
 		)
-		(pin "2"
-			(uuid "a01c0b46-f794-453c-a849-16d66f3d2a2a")
-		)
-		(instances
-			(project "nixie-esp32"
-				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc/863e175d-8d38-4d3f-8dde-6bece7eb527a/16f1f403-4faf-4699-a131-2482af7f80cf"
-					(reference "C7")
-					(unit 1)
-				)
-				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc/863e175d-8d38-4d3f-8dde-6bece7eb527a/537ac33d-0933-42b4-b750-5529b57cb78d"
-					(reference "C6")
-					(unit 1)
-				)
-				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc/863e175d-8d38-4d3f-8dde-6bece7eb527a/8e02ed31-4115-4baa-9c1d-fdb2ab44bec2"
-					(reference "C8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 143.51 95.25 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bd97fe49-7e6c-4548-84e6-7cd4129e180e")
-		(property "Reference" "#PWR030"
-			(at 143.51 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 143.51 100.33 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 143.51 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 143.51 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 143.51 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "dc2e5b59-c3d6-4032-97e1-1b0666cc6d53")
+		(pin "4"
+			(uuid "1ca66705-a900-40bf-b155-0c62b919347e")
 		)
 		(instances
 			(project "nixie-esp32"
-				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc/863e175d-8d38-4d3f-8dde-6bece7eb527a/16f1f403-4faf-4699-a131-2482af7f80cf"
-					(reference "#PWR034")
-					(unit 1)
-				)
-				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc/863e175d-8d38-4d3f-8dde-6bece7eb527a/537ac33d-0933-42b4-b750-5529b57cb78d"
-					(reference "#PWR030")
-					(unit 1)
-				)
-				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc/863e175d-8d38-4d3f-8dde-6bece7eb527a/8e02ed31-4115-4baa-9c1d-fdb2ab44bec2"
-					(reference "#PWR038")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 114.3 92.71 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d490ee90-4f2b-4afe-9020-921f8af7adfd")
-		(property "Reference" "#PWR028"
-			(at 114.3 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 114.3 97.79 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 114.3 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 114.3 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 114.3 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "fd671a94-e86e-46d3-8bd0-d26a069e1831")
-		)
-		(instances
-			(project "nixie-esp32"
-				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc/863e175d-8d38-4d3f-8dde-6bece7eb527a/16f1f403-4faf-4699-a131-2482af7f80cf"
-					(reference "#PWR032")
-					(unit 1)
-				)
-				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc/863e175d-8d38-4d3f-8dde-6bece7eb527a/537ac33d-0933-42b4-b750-5529b57cb78d"
-					(reference "#PWR028")
-					(unit 1)
-				)
-				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc/863e175d-8d38-4d3f-8dde-6bece7eb527a/8e02ed31-4115-4baa-9c1d-fdb2ab44bec2"
-					(reference "#PWR036")
+				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc/f5118c19-831d-4e27-bbb4-c31eac29ef46/5b28796d-f5fc-4c81-9d58-017f35b7ab9e"
+					(reference "PS1")
 					(unit 1)
 				)
 			)

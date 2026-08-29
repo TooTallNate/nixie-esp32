@@ -1,0 +1,271 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "2b5893ea-8779-4a49-94e3-30e3df3978a2")
+	(paper "A4")
+	(lib_symbols)
+	(wire
+		(pts
+			(xy 110.49 46.99) (xy 110.49 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d48871f-4c5d-4a3d-8639-e202e2902ec9")
+	)
+	(wire
+		(pts
+			(xy 102.87 46.99) (xy 102.87 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7bd79e53-b5a7-4c63-8c9f-dab082f6d87c")
+	)
+	(wire
+		(pts
+			(xy 107.95 46.99) (xy 107.95 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c99a3adf-4e47-4143-a53f-c890851ff06a")
+	)
+	(wire
+		(pts
+			(xy 105.41 46.99) (xy 105.41 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d011e988-e7c0-4b20-9166-d851b490a572")
+	)
+	(hierarchical_label "HV_BLANK"
+		(shape input)
+		(at 110.49 46.99 90)
+		(effects
+			(font
+				(face "STIX Two Math")
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "24e1b221-b2c6-4497-9f11-2d8f0f94d2bb")
+	)
+	(hierarchical_label "HV_DATA"
+		(shape input)
+		(at 105.41 46.99 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b7e3b661-bf81-42b8-8c2c-04bb32ac0e4d")
+	)
+	(hierarchical_label "HV_CLOCK"
+		(shape input)
+		(at 107.95 46.99 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c5247364-4bba-4bd4-9085-e09ffda8ef4d")
+	)
+	(hierarchical_label "HV_LATCH"
+		(shape input)
+		(at 102.87 46.99 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f8d5376b-55c4-4c82-84c5-67044b0e1bb1")
+	)
+	(sheet
+		(at 127 50.8)
+		(size 25.4 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "5b28796d-f5fc-4c81-9d58-017f35b7ab9e")
+		(property "Sheetname" "Power170v"
+			(at 127 50.0884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power-170v.kicad_sch"
+			(at 127 76.7846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "nixie-esp32"
+				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc/f5118c19-831d-4e27-bbb4-c31eac29ef46"
+					(page "10")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 88.9 50.8)
+		(size 25.4 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "959fe2a3-48a2-4479-a692-fe13457ebd17")
+		(property "Sheetname" "HvDriver"
+			(at 88.9 50.0884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "hv-driver.kicad_sch"
+			(at 88.9 76.7846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "BLANK" input
+			(at 110.49 50.8 90)
+			(uuid "0f0233dd-64ad-46b6-b767-8bec7e9dbc7a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CLOCK" input
+			(at 107.95 50.8 90)
+			(uuid "8dc39684-2f91-48b6-a75c-3f44644ba788")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "DATA" input
+			(at 105.41 50.8 90)
+			(uuid "80973e29-6e2a-4b90-b65a-0b5f29e50133")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LATCH" input
+			(at 102.87 50.8 90)
+			(uuid "6248e6de-2cb6-4542-bad9-dc2ec34dc3e0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "nixie-esp32"
+				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc/f5118c19-831d-4e27-bbb4-c31eac29ef46"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 50.8 50.8)
+		(size 25.4 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "a4d07a94-3fe1-4de1-9ab9-b98e8dd33552")
+		(property "Sheetname" "Power12v"
+			(at 50.8 50.0884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power-12v.kicad_sch"
+			(at 50.8 76.7846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "nixie-esp32"
+				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc/f5118c19-831d-4e27-bbb4-c31eac29ef46"
+					(page "7")
+				)
+			)
+		)
+	)
+)
