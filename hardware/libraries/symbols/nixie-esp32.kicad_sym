@@ -2122,7 +2122,7 @@
 				(justify left top)
 			)
 		)
-		(property "Datasheet" "https://g.componentsearchengine.com/ga/PL-AL5030-3R3"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tpd2e2u06.pdf"
 			(at 24.13 -194.92 0)
 			(show_name no)
 			(do_not_autoplace no)

@@ -1,9 +1,20 @@
 (version 1)
 
+# Rules are evaluated in order; later rules take precedence over earlier ones,
+# so the most specific rule (the U4 fanout exception) comes last.
+
 (rule "HV to everything else"
 	(condition "A.NetClass == 'HV' && B.NetClass != 'HV'")
 	(constraint clearance (min 1.5mm)))
 
 (rule "HV to HV"
 	(condition "A.NetClass == 'HV' && B.NetClass == 'HV'")
-	(constraint clearance (min 0.4mm)))
+	(constraint clearance (min 1.0mm)))
+
+# The HV5622 PQFP-44 has 0.8mm pin pitch (~0.35mm pad gap), so the general
+# HV-to-HV rule is physically impossible to meet at the package. Relax it
+# only in the immediate vicinity of U4; fan traces apart quickly after
+# leaving the pins.
+(rule "HV to HV at the HV5622 driver"
+	(condition "A.NetClass == 'HV' && B.NetClass == 'HV' && (A.intersectsCourtyard('U4') || B.intersectsCourtyard('U4'))")
+	(constraint clearance (min 0.2mm)))
