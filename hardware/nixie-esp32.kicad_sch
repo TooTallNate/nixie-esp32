@@ -3150,6 +3150,12 @@
 		(uuid "a9030781-a8ec-4ded-90ef-e5319046358d")
 	)
 	(junction
+		(at 64.77 27.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b254b903-493a-42bb-9083-ae53c765eef7")
+	)
+	(junction
 		(at 125.73 54.61)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3603,6 +3609,16 @@
 	)
 	(wire
 		(pts
+			(xy 64.77 27.94) (xy 69.85 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44d4164e-7039-4a0a-b1cb-64fd97a99494")
+	)
+	(wire
+		(pts
 			(xy 134.62 93.98) (xy 134.62 99.06)
 		)
 		(stroke
@@ -3913,6 +3929,16 @@
 	)
 	(wire
 		(pts
+			(xy 63.5 27.94) (xy 64.77 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80595c72-646c-4ad9-91b7-29cf12b002ff")
+	)
+	(wire
+		(pts
 			(xy 35.56 110.49) (xy 40.64 110.49)
 		)
 		(stroke
@@ -3920,16 +3946,6 @@
 			(type default)
 		)
 		(uuid "83891b84-47f6-4103-b3e8-f24f7548dbce")
-	)
-	(wire
-		(pts
-			(xy 64.77 27.94) (xy 69.85 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "838e3feb-689e-4749-9e7d-fa900e62c646")
 	)
 	(wire
 		(pts
@@ -4100,16 +4116,6 @@
 			(type default)
 		)
 		(uuid "a41eb17b-db70-483a-9ade-baad17df6b15")
-	)
-	(wire
-		(pts
-			(xy 64.77 24.13) (xy 64.77 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a87643ca-593b-4180-9b4c-e9b07054bf63")
 	)
 	(wire
 		(pts
@@ -4370,6 +4376,16 @@
 			(type default)
 		)
 		(uuid "da555d72-0ebd-48ef-8d03-9281c4d2d42b")
+	)
+	(wire
+		(pts
+			(xy 64.77 20.32) (xy 64.77 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da575f47-2635-422e-a66f-941a0c6a6a08")
 	)
 	(wire
 		(pts
@@ -5740,7 +5756,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 99.06 27.94 0)
+		(at 63.5 27.94 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5748,88 +5764,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7c1f5a90-4b2e-4f6d-9a83-2e5d0c7b1a42")
-		(property "Reference" "#FLG04"
-			(at 99.06 26.035 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 99.06 22.86 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 99.06 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 99.06 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 99.06 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9e8d7c6b-5a49-4382-b1f0-3d2c1b0a9e8f")
-		)
-		(instances
-			(project "nixie-esp32"
-				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc"
-					(reference "#FLG04")
-					(unit 1)
-				)
-			)
-		)
-	)
-(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 64.77 27.94 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "3f6f1498-dc4d-43eb-9b6b-0c9cc2c1f189")
 		(property "Reference" "#FLG01"
-			(at 64.77 26.035 0)
+			(at 63.5 26.035 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5840,7 +5777,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 64.77 22.86 0)
+			(at 56.642 26.162 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5850,7 +5787,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 64.77 27.94 0)
+			(at 63.5 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5861,7 +5798,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 64.77 27.94 0)
+			(at 63.5 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5872,7 +5809,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 64.77 27.94 0)
+			(at 63.5 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7097,6 +7034,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 99.06 27.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7c1f5a90-4b2e-4f6d-9a83-2e5d0c7b1a42")
+		(property "Reference" "#FLG04"
+			(at 99.06 26.035 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 99.06 22.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 99.06 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9e8d7c6b-5a49-4382-b1f0-3d2c1b0a9e8f")
+		)
+		(instances
+			(project "nixie-esp32"
+				(path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc"
+					(reference "#FLG04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 102.87 120.65 0)
 		(unit 1)
@@ -8292,7 +8307,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 64.77 24.13 0)
+		(at 64.77 20.32 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8303,7 +8318,7 @@
 		(fields_autoplaced yes)
 		(uuid "d7aae60e-01cc-4e5a-b59a-df8224d6fd50")
 		(property "Reference" "#PWR09"
-			(at 64.77 27.94 0)
+			(at 64.77 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8314,7 +8329,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 64.77 19.05 0)
+			(at 64.77 15.24 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8324,7 +8339,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 64.77 24.13 0)
+			(at 64.77 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8335,7 +8350,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 64.77 24.13 0)
+			(at 64.77 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8346,7 +8361,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 64.77 24.13 0)
+			(at 64.77 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
