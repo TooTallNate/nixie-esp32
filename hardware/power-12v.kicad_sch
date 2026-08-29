@@ -2478,7 +2478,7 @@
 				)
 			)
 		)
-		(property "Value" "10µF/25V"
+		(property "Value" "10µF"
 			(at 127 119.38 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2512,6 +2512,17 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 127 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage" "25V"
+			(at 127 121.92 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

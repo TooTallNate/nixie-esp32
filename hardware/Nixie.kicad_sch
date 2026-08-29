@@ -723,6 +723,12 @@
 			(embedded_fonts no)
 		)
 	)
+	(junction
+		(at 170.18 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9cc3e411-2c34-4ca3-924b-b9f4b822959c")
+	)
 	(wire
 		(pts
 			(xy 132.08 67.31) (xy 135.89 67.31)
@@ -845,6 +851,16 @@
 	)
 	(wire
 		(pts
+			(xy 170.18 80.01) (xy 173.99 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aeaf9bc2-a6b6-44e5-9be2-f01df2d2a17e")
+	)
+	(wire
+		(pts
 			(xy 132.08 87.63) (xy 135.89 87.63)
 		)
 		(stroke
@@ -872,6 +888,16 @@
 			(type default)
 		)
 		(uuid "ef28cf3f-35c3-4797-a201-49f2439609a3")
+	)
+	(label "ANODE"
+		(at 173.99 80.01 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c87bafef-dbb2-44a9-85f9-94592b936610")
 	)
 	(hierarchical_label "K7"
 		(shape input)

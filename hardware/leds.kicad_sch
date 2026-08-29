@@ -1577,7 +1577,7 @@
 				)
 			)
 		)
-		(property "Value" "330Ω"
+		(property "Value" "330"
 			(at 185.42 39.37 90)
 			(show_name no)
 			(do_not_autoplace no)
