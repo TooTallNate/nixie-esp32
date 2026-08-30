@@ -5079,7 +5079,7 @@
 	(footprint "nixie-esp32:RESC3116X65N"
 		(layer "F.Cu")
 		(uuid "a4437cf7-9402-4030-9b1f-6259eed3050f")
-		(at 180 104.5 90)
+		(at 179 104.5 90)
 		(descr "CRGH1206")
 		(tags "Resistor")
 		(property "Reference" "R12"
