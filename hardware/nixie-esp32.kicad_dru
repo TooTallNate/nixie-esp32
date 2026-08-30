@@ -16,11 +16,11 @@
 # only in the immediate vicinity of U4; fan traces apart quickly after
 # leaving the pins.
 (rule "HV to HV at the HV5622 driver"
-	(condition "A.NetClass == 'HV' && B.NetClass == 'HV' && (A.intersectsCourtyard('U4') || B.intersectsCourtyard('U4'))")
+	(condition "A.NetClass == 'HV' && B.NetClass == 'HV' && A.intersectsCourtyard('U4') && B.intersectsCourtyard('U4')")
 	(constraint clearance (min 0.2mm)))
 
 # Unused HV5622 pins are necessarily adjacent to HV outputs at the package.
 # Apply the same local package exception, then fan HV traces out immediately.
 (rule "HV to non-HV at the HV5622 driver"
-	(condition "A.NetClass == 'HV' && B.NetClass != 'HV' && (A.intersectsCourtyard('U4') || B.intersectsCourtyard('U4'))")
+	(condition "A.NetClass == 'HV' && B.NetClass != 'HV' && A.intersectsCourtyard('U4') && B.intersectsCourtyard('U4')")
 	(constraint clearance (min 0.2mm)))
