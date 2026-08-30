@@ -555,7 +555,7 @@
 		(at 131.5 113.5)
 		(descr "Bivar SMTLA5050RGB addressable RGB LED, 5.0 x 5.4 x 1.6 mm PLCC4, datasheet recommended land pattern")
 		(tags "Bivar SMTLA5050RGB addressable RGB LED 5050 PLCC4")
-		(property "Reference" "D2"
+		(property "Reference" "LED1"
 			(at 0 -3.6 0)
 			(layer "F.SilkS")
 			(uuid "0d4add01-1afd-466e-ba4d-4e68704b9b16")
@@ -2795,7 +2795,7 @@
 		(at 171.5 113.5)
 		(descr "Bivar SMTLA5050RGB addressable RGB LED, 5.0 x 5.4 x 1.6 mm PLCC4, datasheet recommended land pattern")
 		(tags "Bivar SMTLA5050RGB addressable RGB LED 5050 PLCC4")
-		(property "Reference" "D4"
+		(property "Reference" "LED3"
 			(at 0 -3.6 0)
 			(layer "F.SilkS")
 			(uuid "5e9b6b44-04d6-44dc-9b0a-7f11c6cf70f7")
@@ -3053,7 +3053,7 @@
 		(at 151.5 113.47878)
 		(descr "Bivar SMTLA5050RGB addressable RGB LED, 5.0 x 5.4 x 1.6 mm PLCC4, datasheet recommended land pattern")
 		(tags "Bivar SMTLA5050RGB addressable RGB LED 5050 PLCC4")
-		(property "Reference" "D3"
+		(property "Reference" "LED2"
 			(at 0 -3.6 0)
 			(layer "F.SilkS")
 			(uuid "19332924-eda7-48ea-8536-e3ecb08e733c")
