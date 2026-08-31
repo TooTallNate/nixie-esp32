@@ -5,11 +5,11 @@
 
 (rule "HV to everything else"
 	(condition "A.NetClass == 'HV' && B.NetClass != 'HV'")
-	(constraint clearance (min 1.5mm)))
+	(constraint clearance (min 0.5mm)))
 
 (rule "HV to HV"
 	(condition "A.NetClass == 'HV' && B.NetClass == 'HV'")
-	(constraint clearance (min 1.0mm)))
+	(constraint clearance (min 0.5mm)))
 
 # The SN74141 DIP pads have approximately 0.9mm copper spacing. Relax the
 # clearance only when both items are inside the same decoder courtyard.

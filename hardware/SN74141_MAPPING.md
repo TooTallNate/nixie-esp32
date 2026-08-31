@@ -27,22 +27,5 @@ must translate the desired displayed digit to the following BCD code:
 
 BCD values 10 through 15 blank the SN74141 outputs.
 
-## Assembly wire links
-
-Install these five insulated point-to-point wires after soldering the IC
-sockets and Nixie tubes. Keep the cathode wires separated from low-voltage
-conductors; they switch the tube's +170 V domain.
-
-| Link | From | To | Signal |
-| --- | --- | --- | --- |
-| W1 | U2 pad 10 | U6 pin 3 | GPIO17 / N3 BCD A |
-| W2 | U5 pin 9 | N2 pin 3 | N2 cathode K3 |
-| W3 | U5 pin 13 | N2 pin 4 | N2 cathode K4 |
-| W4 | U6 pin 13 | N3 pin 4 | N3 cathode K4 |
-| W5 | PS1 pin 3 | R12 pad 2 | +170 V anode bus |
-
-Use appropriately rated insulated wire for W5 and route it along the right
-board edge, away from low-voltage conductors.
-
 The PCB has no holes or copper pads for the IN-14 `LHDP` and `RHDP` leads.
 Snip both unused decimal-point leads before installing each tube.
