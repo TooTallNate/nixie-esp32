@@ -5,51 +5,79 @@
 	(layer "F.Cu")
 	(descr "PTS645SL70SMTR92 LFS-1.1")
 	(tags "Switch (4-Pin Push)")
-	(property "Reference" "S**"
-		(at 0 0 0)
+	(property "Reference" "REF**"
+		(at 0 0 270)
 		(layer "F.SilkS")
-		(uuid "3fad0af0-a45d-4aa8-8cc5-28d18c943f92")
+		(uuid "c501b4c7-278c-4e25-9b1c-1b1853d5094b")
 		(effects
 			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
+				(size 1 1)
+				(thickness 0.15)
 			)
 		)
 	)
 	(property "Value" "PTS645SL70SMTR92LFS"
-		(at 0 0 0)
+		(at -6 0 270)
 		(layer "F.SilkS")
-		(hide yes)
-		(uuid "740fd040-a545-4b15-918e-ddc4f68e4b7d")
+		(uuid "8e8cd4bd-b96b-4961-9b9e-1497a79b34af")
 		(effects
 			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
+				(size 1 1)
+				(thickness 0.15)
 			)
 		)
 	)
 	(property "Datasheet" "https://www.ckswitches.com/media/1471/pts645.pdf"
-		(at 0 0 0)
+		(at 0 0 270)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "b66804d4-f843-428b-9b5d-a2627fcce05f")
+		(uuid "2a76a91a-cc0b-4fc6-adc3-75d78f1eb3ab")
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
 	)
-	(property "Description" "C&K PTS645SL70SMTR92 LFS tactile switch, SPST-NO, top actuated, surface mount"
-		(at 0 0 0)
+	(property "Description" "C&K PTS645SL70SMTR92 LFS tactile switch, SPST-NO, top actuated, surface mount, 50 mA at 12 VDC"
+		(at 0 0 270)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "4f738bf3-f31a-4f19-ada1-3a8923a28d88")
+		(uuid "2a28c327-1e69-4752-ba6c-55d0733a9c9a")
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
 	)
+	(property "Manufacturer" "C&K"
+		(at 0 0 270)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1ed4efb9-8077-41b5-8ab7-c48ee218d423")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer_Part_Number" "PTS645SL70SMTR92 LFS"
+		(at 0 0 270)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4b6116b1-0efd-4c52-a58c-8c40bb9e1920")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property ki_fp_filters "PTS645SL70SMTR92LFS")
+	(sheetname "Root")
+	(sheetfile "nixie-esp32.kicad_sch")
 	(attr smd)
 	(duplicate_pad_numbers_are_jumpers no)
 	(fp_line
@@ -60,7 +88,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "e63413c1-1206-4efa-953e-4d9e745a2a6e")
+		(uuid "06a1e90b-f26c-4123-9894-ba3a184630ad")
 	)
 	(fp_line
 		(start -5.2 -2.25)
@@ -70,7 +98,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "8c16c165-289b-4432-8d41-36cacf5bd726")
+		(uuid "54a7d120-d034-421f-8796-986c3a70cb12")
 	)
 	(fp_line
 		(start -3 -1.2)
@@ -80,7 +108,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "24a982f2-f7a5-49ad-95e0-843cd3686b6f")
+		(uuid "a8278d86-9506-4698-96ee-b6f6f071c212")
 	)
 	(fp_line
 		(start -2.8 -3)
@@ -90,7 +118,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "0801f44b-8f98-43bc-a932-581b5880c953")
+		(uuid "20df5c59-4512-4d47-9631-09d3b69d9e2e")
 	)
 	(fp_line
 		(start -2.8 3)
@@ -100,7 +128,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "337f1e04-f979-4e02-8e89-a983c655599e")
+		(uuid "9cbb0ef1-21b5-45a9-bf37-4be700bc1a2a")
 	)
 	(fp_line
 		(start 3 -1.2)
@@ -110,7 +138,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "b9c0daa4-c575-4cf1-b292-6ba0b33c2e5d")
+		(uuid "86172a96-7922-467a-af88-b7d8d9496d40")
 	)
 	(fp_arc
 		(start -5.3 -2.25)
@@ -121,7 +149,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "8c4204b3-d383-4e66-95c2-c6953ce3ad3a")
+		(uuid "a4e49671-a922-4869-9786-c5d15f36c58d")
 	)
 	(fp_arc
 		(start -5.2 -2.25)
@@ -132,7 +160,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "4701fd78-72ca-4f14-a1f0-40ab44e38c90")
+		(uuid "6afdd178-bfad-4a95-ae74-5b781332d8c1")
 	)
 	(fp_line
 		(start -5.75 -4)
@@ -142,7 +170,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "0e85c56d-0e5f-4fc4-a95a-250b63f28421")
+		(uuid "f36a0791-2068-49db-9153-ee1296fcbe1e")
 	)
 	(fp_line
 		(start -5.75 4)
@@ -152,47 +180,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "eab60783-27d6-4675-be72-7e1efa67ac22")
-	)
-	(fp_line
-		(start -3 -3)
-		(end 3 -3)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "5848adee-6545-4583-b166-a6f1130436ef")
-	)
-	(fp_line
-		(start -3 3)
-		(end -3 -3)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "02399d4a-b3d9-4f8a-af7a-1fe4145196ac")
-	)
-	(fp_line
-		(start 3 -3)
-		(end 3 3)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "7e970801-f40c-4564-9e31-5290e4c5b256")
-	)
-	(fp_line
-		(start 3 3)
-		(end -3 3)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "3ad6737d-dc67-4643-96c0-d53b97acf480")
+		(uuid "b0831128-0e31-46e7-a261-017eacf12cde")
 	)
 	(fp_line
 		(start 5.75 -4)
@@ -202,7 +190,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "14a91a53-d838-4342-a6be-e97903c5bcea")
+		(uuid "84048530-1740-42cc-85b1-a6f68aec8fa3")
 	)
 	(fp_line
 		(start 5.75 4)
@@ -212,35 +200,75 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "850a9ae3-bb78-44c0-b223-5dd4dd653d1e")
+		(uuid "a3a6106b-1380-41e6-88d8-cb04fd6c17c3")
+	)
+	(fp_line
+		(start -3 -3)
+		(end 3 -3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "8fb2c15a-4f63-4908-8365-18f3ced975e6")
+	)
+	(fp_line
+		(start -3 3)
+		(end -3 -3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "12482540-1097-46e6-8472-ab4f4e2cbb37")
+	)
+	(fp_line
+		(start 3 -3)
+		(end 3 3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "de1beb77-44fd-4f1c-aa53-8d73e081c48d")
+	)
+	(fp_line
+		(start 3 3)
+		(end -3 3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "08e51c40-6da5-4418-98a3-97eeb96401ed")
 	)
 	(pad "1" smd rect
-		(at -3.975 -2.25 90)
+		(at -3.975 -2.25)
 		(size 1.3 1.55)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 45)
-		(uuid "f9aebc14-9baa-444e-8399-d92d14583dee")
+		(uuid "58353ff6-a3d9-4339-8565-97474578f8f2")
 	)
 	(pad "2" smd rect
-		(at 3.975 -2.25 90)
+		(at 3.975 -2.25)
 		(size 1.3 1.55)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 45)
-		(uuid "30256c47-256e-448c-b940-a608287ac1da")
+		(uuid "83bff85f-b573-4204-a5cc-0e991cbbe97f")
 	)
 	(pad "3" smd rect
-		(at -3.975 2.25 90)
+		(at -3.975 2.25)
 		(size 1.3 1.55)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 45)
-		(uuid "d6f8db7b-3ac1-4308-b133-0d9c46fbaf33")
+		(uuid "47b6d6f1-0615-4341-b499-b6457e4003a0")
 	)
 	(pad "4" smd rect
-		(at 3.975 2.25 90)
+		(at 3.975 2.25)
 		(size 1.3 1.55)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 45)
-		(uuid "cddbf657-e8cd-44e0-9894-64778b51e7c2")
+		(uuid "514654c8-bdcd-40af-a236-789fb59f1e2c")
 	)
 	(embedded_fonts no)
 	(model "${KIPRJMOD}/libraries/3dmodels/PTS645SL70SMTR92_LFS.stp"
