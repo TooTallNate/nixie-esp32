@@ -43,3 +43,17 @@
 (rule "Cathode neckdown inside SN74141 packages"
 	(condition "A.NetName == '/Nixies/HvDriver/N?_K*' && B.NetName == '/Nixies/HvDriver/N?_K*' && ((A.intersectsCourtyard('U4') && B.intersectsCourtyard('U4')) || (A.intersectsCourtyard('U5') && B.intersectsCourtyard('U5')) || (A.intersectsCourtyard('U6') && B.intersectsCourtyard('U6')))")
 	(constraint clearance (min 0.3mm)))
+
+(rule "GPIO10 escape past R15"
+	(condition "A.NetName == '/ESP32_GPIO10' && B.intersectsCourtyard('R15')")
+	(constraint clearance (min 0.1mm)))
+
+# Join the mirrored USB 2.0 contacts on opposite sides of the connector pad
+# row, then return to 0.2mm routing outside the connector.
+(rule "USB-C duplicate data pin fanout"
+	(condition "A.intersectsCourtyard('J1') && B.intersectsCourtyard('J1') && (A.NetName == '/USB_D+' || A.NetName == '/USB_D-')")
+	(constraint clearance (min 0.1mm)))
+
+(rule "USB-C duplicate data pin neckdown"
+	(condition "A.intersectsCourtyard('J1') && (A.NetName == '/USB_D+' || A.NetName == '/USB_D-')")
+	(constraint track_width (min 0.1mm)))
