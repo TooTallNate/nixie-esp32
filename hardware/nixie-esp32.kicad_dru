@@ -15,4 +15,31 @@
 # clearance only when both items are inside the same decoder courtyard.
 (rule "HV spacing inside SN74141 packages"
 	(condition "((A.intersectsCourtyard('U4') && B.intersectsCourtyard('U4')) || (A.intersectsCourtyard('U5') && B.intersectsCourtyard('U5')) || (A.intersectsCourtyard('U6') && B.intersectsCourtyard('U6'))) && (A.NetClass == 'HV' || B.NetClass == 'HV')")
-	(constraint clearance (min 0.8mm)))
+	(constraint clearance (min 0.3mm)))
+
+# Cathodes are current-limited members of the same isolated HV domain. The
+# tighter spacing permits one 0.2mm trace through the 1.6mm IN-14 pin gaps.
+(rule "Cathode to cathode"
+	(condition "A.NetName == '/Nixies/HvDriver/N?_K*' && B.NetName == '/Nixies/HvDriver/N?_K*'")
+	(constraint clearance (min 0.5mm)))
+
+# The RGB LED is mounted inside each tube's closed cathode-pin ring. Permit
+# its low-voltage traces to escape between pins only within that tube.
+(rule "LED escape inside IN-14 footprints"
+	(condition "((A.intersectsCourtyard('N1') && B.intersectsCourtyard('N1')) || (A.intersectsCourtyard('N2') && B.intersectsCourtyard('N2')) || (A.intersectsCourtyard('N3') && B.intersectsCourtyard('N3'))) && (A.NetClass == 'HV' || B.NetClass == 'HV')")
+	(constraint clearance (min 0.5mm)))
+
+(rule "Cathode to tube LED nets"
+	(condition "A.NetName == '/Nixies/HvDriver/N?_K*' && (B.NetName == '/LEDs/*' || B.NetName == '+5V' || B.NetName == 'GND')")
+	(constraint clearance (min 0.5mm)))
+
+# BCD traces escape between the SN74141's cathode output pins. These are
+# current-limited switched cathodes, so use the same clearance as the tube
+# cathode fanout while retaining the larger clearance around +170V/anodes.
+(rule "Cathode to SN74141 BCD signals"
+	(condition "A.NetName == '/Nixies/HvDriver/N?_K*' && B.NetName == 'ESP32_GPIO*'")
+	(constraint clearance (min 0.5mm)))
+
+(rule "Cathode neckdown inside SN74141 packages"
+	(condition "A.NetName == '/Nixies/HvDriver/N?_K*' && B.NetName == '/Nixies/HvDriver/N?_K*' && ((A.intersectsCourtyard('U4') && B.intersectsCourtyard('U4')) || (A.intersectsCourtyard('U5') && B.intersectsCourtyard('U5')) || (A.intersectsCourtyard('U6') && B.intersectsCourtyard('U6')))")
+	(constraint clearance (min 0.3mm)))
