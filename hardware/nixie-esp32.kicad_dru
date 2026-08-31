@@ -11,16 +11,8 @@
 	(condition "A.NetClass == 'HV' && B.NetClass == 'HV'")
 	(constraint clearance (min 1.0mm)))
 
-# The HV5622 PQFP-44 has 0.8mm pin pitch (~0.35mm pad gap), so the general
-# HV-to-HV rule is physically impossible to meet at the package. Relax it
-# only in the immediate vicinity of U4; fan traces apart quickly after
-# leaving the pins.
-(rule "HV to HV at the HV5622 driver"
-	(condition "A.NetClass == 'HV' && B.NetClass == 'HV' && A.intersectsCourtyard('U4') && B.intersectsCourtyard('U4')")
-	(constraint clearance (min 0.2mm)))
-
-# Unused HV5622 pins are necessarily adjacent to HV outputs at the package.
-# Apply the same local package exception, then fan HV traces out immediately.
-(rule "HV to non-HV at the HV5622 driver"
-	(condition "A.NetClass == 'HV' && B.NetClass != 'HV' && A.intersectsCourtyard('U4') && B.intersectsCourtyard('U4')")
-	(constraint clearance (min 0.2mm)))
+# The SN74141 DIP pads have approximately 0.9mm copper spacing. Relax the
+# clearance only when both items are inside the same decoder courtyard.
+(rule "HV spacing inside SN74141 packages"
+	(condition "((A.intersectsCourtyard('U4') && B.intersectsCourtyard('U4')) || (A.intersectsCourtyard('U5') && B.intersectsCourtyard('U5')) || (A.intersectsCourtyard('U6') && B.intersectsCourtyard('U6'))) && (A.NetClass == 'HV' || B.NetClass == 'HV')")
+	(constraint clearance (min 0.8mm)))
