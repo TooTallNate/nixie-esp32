@@ -540,6 +540,10 @@
       {
         "netclass": "HV",
         "pattern": "/Nixies/HvDriver/N?_K*"
+      },
+      {
+        "netclass": "HV",
+        "pattern": "/Nixies/Power170v/HV_LED_DIV"
       }
     ]
   },

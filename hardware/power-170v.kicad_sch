@@ -721,7 +721,248 @@
 			)
 			(embedded_fonts no)
 		)
+	
+(symbol "Device:R" (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "R" (at 2.032 0 90) (show_name)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "R" (at 0 0 90) (show_name)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at -1.778 0 90) (show_name)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Datasheet" "" (at 0 0 0) (show_name)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Description" "Resistor" (at 0 0 0) (show_name)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "ki_keywords" "R res resistor" (at 0 0 0) (show_name)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "ki_fp_filters" "R_*" (at 0 0 0) (show_name)
+        (effects (font (size 1.27 1.27)))
+      )
+      (symbol "R_0_1"
+        (rectangle (start -1.016 -2.54) (end 1.016 2.54)
+          (stroke (width 0.254) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "R_1_1"
+        (pin passive line (at 0 3.81 270) (length 1.27)
+          (name "" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -3.81 90) (length 1.27)
+          (name "" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+(symbol "Device:LED"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "D"
+			(at 0 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 0 -2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "LED diode"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "LED_0_1"
+			(polyline
+				(pts
+					(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.27 0) (xy 1.27 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.27 -1.27) (xy -1.27 1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "LED_1_1"
+			(pin passive line
+				(at -3.81 0 0)
+				(length 2.54)
+				(name "K"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 3.81 0 180)
+				(length 2.54)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
 	)
+)
 	(junction
 		(at 135.89 85.09)
 		(diameter 0)
@@ -1322,4 +1563,90 @@
 			)
 		)
 	)
+	(symbol
+		(lib_id "nixie-esp32:+170V")
+		(at 177.8 40.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9a96d8d3-b729-4254-9e87-5b87c5a89ca5")
+		(property "Reference" "#PWR071" (at 180.34 39.37 0) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Value" "+170V" (at 180.34 41.910000000000004 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "" (at 177.8 40.64 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 177.8 40.64 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "ea9a9814-59b0-4436-ac8f-6626516dd21f"))
+		(instances (project "nixie-esp32" (path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc/f5118c19-831d-4e27-bbb4-c31eac29ef46/5b28796d-f5fc-4c81-9d58-017f35b7ab9e" (reference "#PWR071") (unit 1))))
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 177.8 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8c9e85c2-468c-4a52-bab5-26d8fa2e0657")
+		(property "Reference" "R18" (at 180.34 43.18 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "430k" (at 180.34 45.720000000000006 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 177.8 44.45 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 177.8 44.45 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "d0558fea-1e72-4e03-b414-a47c6f480c3a"))
+		(pin "2" (uuid "e12c1661-63ef-465c-a52c-b93325d1adf9"))
+		(instances (project "nixie-esp32" (path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc/f5118c19-831d-4e27-bbb4-c31eac29ef46/5b28796d-f5fc-4c81-9d58-017f35b7ab9e" (reference "R18") (unit 1))))
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 177.8 54.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7f54670c-1288-4aaf-be3c-a30049cc3a1a")
+		(property "Reference" "R19" (at 180.34 53.339999999999996 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "430k" (at 180.34 55.88 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 177.8 54.61 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 177.8 54.61 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "289ca3b1-6346-4ce0-a3be-45219199e7d1"))
+		(pin "2" (uuid "c05d1cde-54d7-436b-b810-47f4e692ba51"))
+		(instances (project "nixie-esp32" (path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc/f5118c19-831d-4e27-bbb4-c31eac29ef46/5b28796d-f5fc-4c81-9d58-017f35b7ab9e" (reference "R19") (unit 1))))
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 177.8 62.23 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "963a288b-f2db-4d49-8a0c-f021eced7901")
+		(property "Reference" "D6" (at 180.34 60.959999999999994 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "RED" (at 180.34 63.5 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 177.8 62.23 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 177.8 62.23 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "4489fc17-a730-474e-89a0-afa610fc9cfc"))
+		(pin "2" (uuid "d0a3d3e6-8671-4bd3-bad4-acc3884471d0"))
+		(instances (project "nixie-esp32" (path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc/f5118c19-831d-4e27-bbb4-c31eac29ef46/5b28796d-f5fc-4c81-9d58-017f35b7ab9e" (reference "D6") (unit 1))))
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 177.8 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fad359e4-78de-4705-9840-4e3f7b7644c9")
+		(property "Reference" "#PWR072" (at 180.34 64.77000000000001 0) (effects (font (size 1.27 1.27)) (justify left) (hide yes)))
+		(property "Value" "GND" (at 180.34 67.31 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "" (at 177.8 66.04 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Datasheet" "" (at 177.8 66.04 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(pin "1" (uuid "3c71c959-8d19-4a72-a59c-df2de31c0732"))
+		(instances (project "nixie-esp32" (path "/54b4b31b-75dd-48a2-8c91-a3f3099728fc/f5118c19-831d-4e27-bbb4-c31eac29ef46/5b28796d-f5fc-4c81-9d58-017f35b7ab9e" (reference "#PWR072") (unit 1))))
+	)
+	(wire (pts (xy 177.8 48.26) (xy 177.8 50.8)) (stroke (width 0) (type default)) (uuid "71a50e2e-5ef1-498b-92e0-5d24a5a99b9e"))
+	(label "HV_LED_DIV" (at 177.8 49.53 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "13c4eeaf-6016-402c-bf02-3b02f3bed896"))
+	(text "HV presence LED / bleed indicator\n~0.2 mA" (at 182.88 44.45 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "b4d5cd01-4686-40cf-80de-fbb01a5cc262"))
 )
